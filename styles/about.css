@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+  overflow-x: hidden;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow-x: hidden;
+}
+
+header .logo {
+  width: 7em;
+  height: 7em;
+  top: 0;
+  position: absolute;
+  float: none;
+}
+
+@media (max-width: 768px) {
+  header .logo {
+    width: 75px;
+    height: 75px;
+    left: 0;
+  }
+}
+
+header nav a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  padding: 15px;
+  color: #8ecae6;
+  float: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a a:last-child {
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  header nav a {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+section {
+  background-color: #00071C;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  height: 15vh;
+  background-color: #00071C;
+  color: #757882;
+  bottom: 0;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 20vh;
+  }
+}
+
+footer p {
+  padding-left: 10%;
+}
+
+@media (max-width: 768px) {
+  footer p {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=about.css.map */
