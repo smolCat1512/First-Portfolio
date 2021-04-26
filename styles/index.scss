@@ -3,26 +3,353 @@ $darkBlue: #00071C;
 $lightBlue: #8ecae6;
 $white: #fff;
 $black: #000000;
+$lightGrey: #757882;
 
 
 // Styling fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
 
 // Font usage variables
-$poppins: 'Poppins', sans-serif;
-$sourceSans: 'Source Sans Pro', sans-serif;
+$poppins: 'Poppins',
+sans-serif;
+$sourceSans: 'Source Sans Pro',
+sans-serif;
+
+// Media queries
+
+$smallerScreens: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$smallerScreens}) {
+        @content;
+    }
+}
+
+div {
+    overflow-x: hidden;
+}
 
 // Body styling
 body {
     margin: 0;
     padding: 0;
+    animation: fadeIn 3s;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
-ul {
-    list-style-type: none;
+// Header styling
+header {
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+        width: 7em;
+        height: 7em;
+        top: 0;
+        position: absolute;
+        float: none;
+
+        @include mobile() {
+            width: 75px;
+            height: 75px;
+            left: 0;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline;
+        justify-content: space-between;
+    }
+
+    a {
+        font-family: $poppins;
+        text-decoration: none;
+        padding: 15px;
+        float: right;
+        color: $lightBlue;
+
+        a:last-child {
+            padding-right: 10px;
+        }
+
+        @include mobile() {
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+    a:hover {
+        color: $white;
+    }
 }
 
-a {
+// Section styling
+section {
+    height: 100vh;
+    background-color: $darkBlue;
+    margin-top: -100px;
+
+    @include mobile {
+        margin-top: -150px;
+    }
+
+    h2 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        font-family: $poppins;
+        color: $lightGrey;
+
+        @include mobile() {
+            top: 10%;
+        }
+    }
+
+    p {
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        font-family: $sourceSans;
+        color: $white;
+        font-size: 42px;
+        width: 50%;
+
+        @include mobile() {
+            top: 20%;
+            font-size: 28px;
+        }
+    }
+
+    .secondParagraph {
+        top: 50%;
+
+        @include mobile() {
+            top: 40%;
+            border-top: 2px solid $lightGrey;
+            font-size: 28px;
+        }
+    }
+
+    .sectionImage {
+        width: 25%;
+        height: 25%;
+        object-fit: cover;
+        position: absolute;
+        top: 30%;
+        left: 70%;
+        clip-path: circle(25% at 35% 43%);
+
+        @include mobile() {
+            margin-left: 20px;
+            width: 30%;
+        }
+    }
+}
+
+// Main area styling, setting up grid area and columns and stylings
+main {
+    font-family: $sourceSans;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "about about about aboutImage aboutImage"
+        "projectsImage projectsImage  projects projects projects"
+        "contact contact contact contactImage contactImage";
+
+    @include mobile() {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "about about"
+            "aboutImage aboutImage"
+            "projects projects"
+            "projectsImage projectsImage"
+            "contact contact"
+            "contactImage contactImage";
+    }
+}
+
+.about {
+    grid-area: about;
+    width: 100%;
+
+    .about-text {
+        font-family: $sourceSans;
+        font-weight: 300;
+        font-size: 24px;
+        width: 125%;
+
+        @include mobile() {
+            width: 100%;
+            font-size: 18px;
+        }
+
+        a {
+            color: $lightBlue;
+            margin-left: 10px;
+        }
+    }
+}
+
+.aboutImage {
+    grid-area: aboutImage;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    clip-path: circle(66.3% at 66% 36%);
+    margin-left: 200px;
+
+    @include mobile() {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.projectsImage {
+    grid-area: projectsImage;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    clip-path: circle(57.6% at 22% 67%);
+    filter: grayscale(75%);
+
+    @include mobile() {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.projects {
+    grid-area: projects;
+
+    .projects-text {
+        font-family: $sourceSans;
+        font-weight: 300;
+        font-size: 24px;
+        width: 100%;
+
+        @include mobile() {
+            width: 100%;
+            font-size: 18px;
+        }
+
+        a {
+            color: $lightBlue;
+            margin-left: 10px;
+        }
+    }
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.contactImage {
+    grid-area: contactImage;
+    clip-path: circle(50% at 69% 65%);
+    padding-bottom: 100px;
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+
+
+    @include mobile() {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.read-more:hover {
+    color: $darkBlue;
+}
+
+// Footer area styling
+footer {
+    display: grid;
     font-family: $poppins;
-    text-decoration: none;
+    height: 7vh;
+    background-color: $darkBlue;
+    color: $lightGrey;
+    bottom: 0;
+
+    @include mobile() {
+        height: 10vh;
+    }
+
+    p {
+        padding-left: 10%;
+
+        @include mobile() {
+            padding: 0;
+        }
+    }
+}
+
+// Animation properties to fade elements in  About section on scroll
+.fade-in-text {
+    margin: 0;
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: 3s all ease-in-out;
+}
+
+.text-appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.fade-in-text2 {
+    margin: 0;
+    opacity: 0;
+    transform: translateX(200px);
+    transition: 3s all ease-in-out;
+}
+
+.text-appear2 {
+    opacity: 1;
+    transform: translateX(140px);
+
+    @include mobile() {
+        transform: translateX(0px);
+
+    }
+}
+
+// Fadce in property stylings for projects on index page
+.fade-in-project {
+    margin: 0;
+    opacity: 0;
+    transform: translateX(140px);
+    transition: 3s all ease-in-out;
+}
+
+.text-appear-project {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.fade-in-project2 {
+    margin: 0;
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: 3s all ease-in-out;
+}
+
+.image-appear-project {
+    opacity: 1;
+    transform: translateY(0px);
 }
