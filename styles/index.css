@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap");
-div {
-  overflow-x: hidden;
-}
-
 body {
   margin: 0;
   padding: 0;
   -webkit-animation: fadeIn 3s;
           animation: fadeIn 3s;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes fadeIn {
@@ -36,6 +33,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow-x: hidden;
 }
 
 header .logo {
@@ -54,37 +57,29 @@ header .logo {
   }
 }
 
-header ul {
-  list-style-type: none;
-}
-
-header li {
-  display: inline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header a {
+header nav a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   padding: 15px;
-  float: right;
   color: #8ecae6;
+  float: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header a a:last-child {
+header nav a a:last-child {
   padding-right: 10px;
 }
 
 @media (max-width: 768px) {
-  header a {
+  header nav a {
     font-size: 12px;
     padding: 10px;
   }
 }
 
-header a:hover {
+header nav a:hover {
   color: #fff;
 }
 
@@ -92,6 +87,7 @@ section {
   height: 100vh;
   background-color: #00071C;
   margin-top: -100px;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
@@ -164,6 +160,7 @@ section .sectionImage {
 
 main {
   font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
@@ -194,7 +191,7 @@ main {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 24px;
-  width: 125%;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -220,7 +217,6 @@ main {
      object-fit: cover;
   -webkit-clip-path: circle(66.3% at 66% 36%);
           clip-path: circle(66.3% at 66% 36%);
-  margin-left: 200px;
 }
 
 @media (max-width: 768px) {
@@ -283,6 +279,26 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: contact;
+  padding-top: 5%;
+}
+
+.contact .contact-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact .contact-text {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+.contact .contact-text a {
+  color: #8ecae6;
+  margin-left: 10px;
 }
 
 .contactImage {
@@ -295,7 +311,6 @@ main {
   padding-bottom: 100px;
   width: 400px;
   height: 400px;
-  margin-left: 200px;
 }
 
 @media (max-width: 768px) {
@@ -313,15 +328,16 @@ footer {
   display: -ms-grid;
   display: grid;
   font-family: "Poppins", sans-serif;
-  height: 7vh;
+  height: 15vh;
   background-color: #00071C;
   color: #757882;
   bottom: 0;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
   footer {
-    height: 10vh;
+    height: 20vh;
   }
 }
 
@@ -332,6 +348,9 @@ footer p {
 @media (max-width: 768px) {
   footer p {
     padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -361,8 +380,8 @@ footer p {
 
 .text-appear2 {
   opacity: 1;
-  -webkit-transform: translateX(140px);
-          transform: translateX(140px);
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
 }
 
 @media (max-width: 768px) {
@@ -400,5 +419,42 @@ footer p {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+.fade-in-contact {
+  margin: 0;
+  opacity: 0;
+  -webkit-transform: translateX(-120px);
+          transform: translateX(-120px);
+  -webkit-transition: 3s all ease-in-out;
+  transition: 3s all ease-in-out;
+}
+
+.text-appear-contact {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.fade-in-contact-image {
+  margin: 0;
+  opacity: 0;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  -webkit-transition: 3s all ease-in-out;
+  transition: 3s all ease-in-out;
+}
+
+.image-appear-contact {
+  opacity: 1;
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
+}
+
+@media (max-width: 768px) {
+  .image-appear-contact {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -25,15 +25,12 @@ $smallerScreens: 768px;
     }
 }
 
-div {
-    overflow-x: hidden;
-}
-
 // Body styling
 body {
     margin: 0;
     padding: 0;
     animation: fadeIn 3s;
+    overflow-x: hidden;
 
     @keyframes fadeIn {
         0% {
@@ -50,6 +47,10 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow-x: hidden;
 
     .logo {
         width: 7em;
@@ -65,33 +66,27 @@ header {
         }
     }
 
-    ul {
-        list-style-type: none;
-    }
+    nav {
+        a {
+            font-family: $poppins;
+            text-decoration: none;
+            padding: 15px;
+            color: $lightBlue;
+            float: right;
+            align-items: center;
+            a:last-child {
+                padding-right: 10px;
+            }
 
-    li {
-        display: inline;
-        justify-content: space-between;
-    }
-
-    a {
-        font-family: $poppins;
-        text-decoration: none;
-        padding: 15px;
-        float: right;
-        color: $lightBlue;
-
-        a:last-child {
-            padding-right: 10px;
+            @include mobile() {
+                font-size: 12px;
+                padding: 10px;
+            }
         }
 
-        @include mobile() {
-            font-size: 12px;
-            padding: 10px;
+        a:hover {
+            color: $white;
         }
-    }
-    a:hover {
-        color: $white;
     }
 }
 
@@ -100,6 +95,7 @@ section {
     height: 100vh;
     background-color: $darkBlue;
     margin-top: -100px;
+    overflow-x: hidden;
 
     @include mobile {
         margin-top: -150px;
@@ -161,6 +157,7 @@ section {
 // Main area styling, setting up grid area and columns and stylings
 main {
     font-family: $sourceSans;
+    overflow-x: hidden;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
@@ -191,7 +188,7 @@ main {
         font-family: $sourceSans;
         font-weight: 300;
         font-size: 24px;
-        width: 125%;
+        width: 100%;
 
         @include mobile() {
             width: 100%;
@@ -211,7 +208,6 @@ main {
     height: 400px;
     object-fit: cover;
     clip-path: circle(66.3% at 66% 36%);
-    margin-left: 200px;
 
     @include mobile() {
         width: 100%;
@@ -256,6 +252,24 @@ main {
 
 .contact {
     grid-area: contact;
+    padding-top: 5%;
+
+    .contact-text {
+        font-family: $sourceSans;
+        font-weight: 300;
+        font-size: 24px;
+        width: 100%;
+
+        @include mobile() {
+            width: 100%;
+            font-size: 18px;
+        }
+
+        a {
+            color: $lightBlue;
+            margin-left: 10px;
+        }
+    }
 }
 
 .contactImage {
@@ -264,7 +278,6 @@ main {
     padding-bottom: 100px;
     width: 400px;
     height: 400px;
-    margin-left: 200px;
 
 
     @include mobile() {
@@ -281,13 +294,14 @@ main {
 footer {
     display: grid;
     font-family: $poppins;
-    height: 7vh;
+    height: 15vh;
     background-color: $darkBlue;
     color: $lightGrey;
     bottom: 0;
+    overflow-x: hidden;
 
     @include mobile() {
-        height: 10vh;
+        height: 20vh;
     }
 
     p {
@@ -295,6 +309,7 @@ footer {
 
         @include mobile() {
             padding: 0;
+            justify-content: center;
         }
     }
 }
@@ -321,7 +336,7 @@ footer {
 
 .text-appear2 {
     opacity: 1;
-    transform: translateX(140px);
+    transform: translateX(80px);
 
     @include mobile() {
         transform: translateX(0px);
@@ -352,4 +367,34 @@ footer {
 .image-appear-project {
     opacity: 1;
     transform: translateY(0px);
+}
+
+// Animation properties to fade elements in Contact section on scroll
+.fade-in-contact {
+    margin: 0;
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: 3s all ease-in-out;
+}
+
+.text-appear-contact {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.fade-in-contact-image {
+    margin: 0;
+    opacity: 0;
+    transform: translateX(200px);
+    transition: 3s all ease-in-out;
+}
+
+.image-appear-contact {
+    opacity: 1;
+    transform: translateX(80px);
+
+    @include mobile() {
+        transform: translateX(0px);
+
+    }
 }
