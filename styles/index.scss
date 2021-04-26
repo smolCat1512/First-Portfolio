@@ -1,0 +1,28 @@
+// Styling colours 
+$darkBlue: #00071C;
+$lightBlue: #8ecae6;
+$white: #fff;
+$black: #000000;
+
+
+// Styling fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+
+// Font usage variables
+$poppins: 'Poppins', sans-serif;
+$sourceSans: 'Source Sans Pro', sans-serif;
+
+// Body styling
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-family: $poppins;
+    text-decoration: none;
+}
