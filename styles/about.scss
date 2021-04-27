@@ -92,7 +92,26 @@ header {
 
 section {
     background-color: $darkBlue;
+    height: 80vh;
+    margin-top: -80px;
+    border-bottom: 2px solid $lightGrey;
 
+    h2 {
+        font-family: $poppins;
+        color: $white;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+
+    p {
+        font-family: $poppins;
+        color: $lightGrey;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-size: 36px;
+    }
     
 }
 

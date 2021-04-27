@@ -46,18 +46,14 @@ body {
 // Header styling
 header {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
-    overflow-x: hidden;
 
     .logo {
         width: 7em;
         height: 7em;
-        top: 0;
         position: absolute;
-        float: none;
 
         @include mobile() {
             width: 75px;
@@ -67,20 +63,26 @@ header {
     }
 
     nav {
+        margin-left: 60%;
+        margin-top: 2.5%;
+
+        @include mobile() {
+            margin-left: 15%;
+        }
+
         a {
             font-family: $poppins;
             text-decoration: none;
             padding: 15px;
             color: $lightBlue;
-            float: right;
-            align-items: center;
+
             a:last-child {
                 padding-right: 10px;
             }
 
             @include mobile() {
                 font-size: 12px;
-                padding: 10px;
+                padding: 5px;
             }
         }
 

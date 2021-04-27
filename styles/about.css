@@ -85,6 +85,26 @@ header nav a:hover {
 
 section {
   background-color: #00071C;
+  height: 80vh;
+  margin-top: -80px;
+  border-bottom: 2px solid #757882;
+}
+
+section h2 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+section p {
+  font-family: "Poppins", sans-serif;
+  color: #757882;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 36px;
 }
 
 footer {
