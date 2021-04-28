@@ -25,6 +25,16 @@ body {
   }
 }
 
+.content {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  will-change: transform;
+  margin: 0;
+  padding: 0;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,7 +75,7 @@ header nav a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   padding: 15px;
-  color: #8ecae6;
+  color: #FF664D;
 }
 
 header nav a a:last-child {
@@ -96,47 +106,46 @@ section {
   }
 }
 
-section h2 {
+section .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 10%;
+  left: 10%;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
   color: #757882;
 }
 
-@media (max-width: 768px) {
-  section h2 {
-    top: 10%;
-  }
-}
-
-section p {
-  position: absolute;
-  top: 35%;
-  left: 20%;
-  font-family: "Source Sans Pro", sans-serif;
+section .banner h1 {
   color: #fff;
-  font-size: 42px;
-  width: 50%;
 }
 
-@media (max-width: 768px) {
-  section p {
-    top: 20%;
-    font-size: 28px;
-  }
+section .banner span {
+  color: #fff;
 }
 
-section .secondParagraph {
-  top: 50%;
+section .banner a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  border-radius: 1000px;
+  text-align: center;
+  background-color: #6a8b9b;
+  width: 100px;
+  margin-top: 5%;
 }
 
-@media (max-width: 768px) {
-  section .secondParagraph {
-    top: 40%;
-    border-top: 2px solid #757882;
-    font-size: 28px;
-  }
+section .banner a:hover {
+  color: #000000;
+  background-color: #6a8b9b;
 }
 
 section .sectionImage {
@@ -145,7 +154,7 @@ section .sectionImage {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 70%;
   -webkit-clip-path: circle(25% at 35% 43%);
           clip-path: circle(25% at 35% 43%);
@@ -202,7 +211,7 @@ main {
 }
 
 .about .about-text a {
-  color: #8ecae6;
+  color: #6a8b9b;
   margin-left: 10px;
 }
 
@@ -270,7 +279,7 @@ main {
 }
 
 .projects .projects-text a {
-  color: #8ecae6;
+  color: #6a8b9b;
   margin-left: 10px;
 }
 
@@ -297,7 +306,7 @@ main {
 }
 
 .contact .contact-text a {
-  color: #8ecae6;
+  color: #6a8b9b;
   margin-left: 10px;
 }
 

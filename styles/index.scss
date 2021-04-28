@@ -1,10 +1,10 @@
 // Styling colours 
 $darkBlue: #00071C;
-$lightBlue: #8ecae6;
+$lightBlue: #6a8b9b;
 $white: #fff;
 $black: #000000;
 $lightGrey: #757882;
-
+$orange: #FF664D;
 
 // Styling fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
@@ -43,6 +43,13 @@ body {
     }
 }
 
+.content {
+    transition: transform .5s;
+    will-change: transform;
+    margin: 0;
+    padding: 0;
+}
+
 // Header styling
 header {
     display: flex;
@@ -74,7 +81,7 @@ header {
             font-family: $poppins;
             text-decoration: none;
             padding: 15px;
-            color: $lightBlue;
+            color: $orange;
 
             a:last-child {
                 padding-right: 10px;
@@ -103,40 +110,39 @@ section {
         margin-top: -150px;
     }
 
-    h2 {
+    .banner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         position: absolute;
-        top: 30%;
-        left: 20%;
+        top: 10%;
+        left: 10%;
         font-family: $poppins;
+        text-decoration: none;
         color: $lightGrey;
 
-        @include mobile() {
-            top: 10%;
+        h1 {
+            color: $white;
         }
-    }
 
-    p {
-        position: absolute;
-        top: 35%;
-        left: 20%;
-        font-family: $sourceSans;
-        color: $white;
-        font-size: 42px;
-        width: 50%;
-
-        @include mobile() {
-            top: 20%;
-            font-size: 28px;
+        span {
+            color: $white;
         }
-    }
 
-    .secondParagraph {
-        top: 50%;
+        a {
+            text-decoration: none;
+            color: $white;
+            padding: 20px;
+            border-radius: 1000px;
+            text-align: center;
+            background-color: $lightBlue;
+            width: 100px;
+            margin-top: 5%;
+        }
 
-        @include mobile() {
-            top: 40%;
-            border-top: 2px solid $lightGrey;
-            font-size: 28px;
+        a:hover {
+            color: $black;
+            background-color: #6a8b9b;
         }
     }
 
@@ -145,7 +151,7 @@ section {
         height: 25%;
         object-fit: cover;
         position: absolute;
-        top: 30%;
+        top: 10%;
         left: 70%;
         clip-path: circle(25% at 35% 43%);
 
