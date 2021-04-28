@@ -135,6 +135,17 @@ header {
     -moz-text-fill-color: transparent;
 }
 
+.navItem2:hover {
+    background: $white;
+    background-color: $white;
+    background-image: $white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
 .navItem3 {
     background: rgb(255, 192, 74);
     background-color: $darkBlue;
@@ -146,10 +157,32 @@ header {
     -moz-text-fill-color: transparent;
 }
 
+.navItem3:hover {
+    background: $white;
+    background-color: $white;
+    background-image: $white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
 .navItem4 {
     background: rgb(255, 192, 74);
     background-color: $darkBlue;
     background-image: $fourthfade;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.navItem4:hover {
+    background: $white;
+    background-color: $white;
+    background-image: $white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
