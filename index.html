@@ -6,85 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
-    <title>Shaun Halliday - Front-end Developer</title>
+    <link rel="icon" type="image/ico" href="/logo.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Shaun Halliday - Front-end Developer - Home</title>
 </head>
 
-<body>
+<body id="top">
 
     <div class="content">
 
-    <header>
-        <a class="logo" href="/"><img class="logo" src="/images/logo.jpg" alt="Shaun Halliday Logo"></a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="/about.html">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+        <header>
+            <a class="logo" href="/"><img class="logo" src="/images/logo.jpg" alt="Shaun Halliday Logo"></a>
+            <nav>
+                <a class="navItem1" href="#">Home</a>
+                <a class="navItem2" href="/about.html">About</a>
+                <a class="navItem3" href="#">Projects</a>
+                <a class="navItem4" href="#">Contact</a>
+            </nav>
+        </header>
 
 
-    <section>
+        <section>
 
-        <div class="banner">
-            <h1>Shaun Halliday</h1>
-            <p><span>Front-end web developer</span> from Skelmersale, West Lancs</p>
-            <p class="secondParagraph">BSc (Hons) Web Design and Development Edge Hill University</p>
-            <a href="/projects.html">My Projects</a>
-        </div>
+            <div class="banner">
+                <h1>Hello, I am <span class="firstSpan">Shaun Halliday</span></h1>
+                <p>I'm a <span class="secondSpan">Front-end web developer</span> from Skelmersale, West Lancs.</p>
+                <p class="secondParagraph">BSc (Hons) Web Design and Development Edge Hill University.</p>
+                <a href="/projects.html">My Projects</a>
+            </div>
 
-        <img class="sectionImage" src="./images/shaun.jpg" alt="Picture of me - Shaun Halliday">
+            <img class="sectionImage" src="./images/shaun.jpg" alt="Picture of me - Shaun Halliday">
 
-    </section>
+        </section>
 
 
-    <main>
+        <main>
 
-        <h1 class="about fade-in-text">About Me <p class="about-text">After working for 21 years since leaving high
-                school wanted
-                to change career, to something I have a passion for. I decided to attend Edge Hill University
-                doing a degree in Web Design and Development, tech is something I have always been interested in,
-                especially the web <a class="read-more" href="./about.html"> read
-                    more...</a></p>
-        </h1>
+            <h1 class="about fade-in-text">About Me <p class="about-text">After working for 21 years since leaving high
+                    school wanted
+                    to change career, to something I have a passion for. I decided to attend Edge Hill University
+                    doing a degree in Web Design and Development, tech is something I have always been interested in,
+                    especially the web <a class="read-more" href="./about.html"> read
+                        more...</a></p>
+            </h1>
 
-        <img class="aboutImage fade-in-text2" src="./images/aboutMe.jpg"
-            alt="Picture of me, Shaun Halliday, with one of my cats">
+            <img class="aboutImage fade-in-text2" src="./images/aboutMe.jpg"
+                alt="Picture of me, Shaun Halliday, with one of my cats">
 
-        <h1 class="projects fade-in-project">Projects
-            <p class="projects-text">I have undertaken numerous projects whilst in university, mostly front-end
-                development. These involved use case studies that I
-                undertook to research, design and develop sites <a href="./projects.html"> read
-                    more...</a></p>
-        </h1>
+            <h1 class="projects fade-in-project">Projects
+                <p class="projects-text">I have undertaken numerous projects whilst in university, mostly front-end
+                    development. These involved use case studies that I
+                    undertook to research, design and develop sites <a href="./projects.html"> read
+                        more...</a></p>
+            </h1>
 
-        <img class="projectsImage fade-in-project2" src="./images/projects-image.jpg" alt="">
+            <img class="projectsImage fade-in-project2" src="./images/projects-image.jpg" alt="">
 
-        <h1 class="contact fade-in-contact">Contact
-            <p class="contact-text">Please contact me to discuss projects, proposals, work, or just for a chat (I am a
-                friendly
-                person.....honest). <a href="./contact.html"> read
-                    more...</a>
-            </p>
+            <h1 class="contact fade-in-contact">Contact
+                <p class="contact-text">Please contact me to discuss projects, proposals, work, or just for a chat (I am
+                    a
+                    friendly
+                    person.....honest). <a href="./contact.html"> read
+                        more...</a>
+                </p>
 
-        </h1>
+            </h1>
 
-        <img class="contactImage fade-in-contact-image" src="./images/test.png" alt="">
+            <img class="contactImage fade-in-contact-image" src="./images/test.png" alt="">
 
-    </main>
+        </main>
 
     </div>
 
     <footer>
+        
+        <!-- <a id="topButton">
+            <img src="/images/top64.jpg" alt="return to top orange arrow icon, turns grey on hover">
+        </a> -->
         <p>&#169;
             <script>
                 document.write(new Date().getFullYear())
             </script> Shaun Halliday</p>
         <p>Website created and coded out by me</p>
+        
     </footer>
-    <script src="./javascript/fade.js"></script>
-    <script src="./javascript/skew.js"></script>
-
+    <button id="topButton">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <script src="/javascript/fade.js"></script>
+    <script src="/javascript/skew.js"></script>
+    <script src="/javascript/top.js"></script>
 </body>
 
 </html>

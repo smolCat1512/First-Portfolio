@@ -2,27 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  -webkit-animation: fadeIn 3s;
-          animation: fadeIn 3s;
   overflow-x: hidden;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .content {
@@ -44,6 +24,35 @@ header {
           justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
+  -webkit-animation: fadeIn 1s ease-in both;
+          animation: fadeIn 1s ease-in both;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 
 header .logo {
@@ -75,7 +84,6 @@ header nav a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   padding: 15px;
-  color: #FF664D;
 }
 
 header nav a a:last-child {
@@ -89,8 +97,52 @@ header nav a a:last-child {
   }
 }
 
-header nav a:hover {
-  color: #fff;
+.navItem1 {
+  background: #ffc04a;
+  background-color: #00071C;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffc04a), color-stop(25%, #ff9949));
+  background-image: linear-gradient(90deg, #ffc04a 0%, #ff9949 25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.navItem2 {
+  background: #ffc04a;
+  background-color: #00071C;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #ff9949), color-stop(50%, #ff8848));
+  background-image: linear-gradient(90deg, #ff9949 25%, #ff8848 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.navItem3 {
+  background: #ffc04a;
+  background-color: #00071C;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ff8848), color-stop(75%, #ff7b48));
+  background-image: linear-gradient(90deg, #ff8848 50%, #ff7b48 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.navItem4 {
+  background: #ffc04a;
+  background-color: #00071C;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(75%, #ff7b48), to(tomato));
+  background-image: linear-gradient(90deg, #ff7b48 75%, tomato 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 section {
@@ -103,6 +155,7 @@ section {
 @media (max-width: 768px) {
   section {
     margin-top: -150px;
+    height: 110vh;
   }
 }
 
@@ -122,14 +175,73 @@ section .banner {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #757882;
+  opacity: 0;
+  -webkit-animation: fadeUp 2s ease-in both;
+          animation: fadeUp 2s ease-in both;
+}
+
+@-webkit-keyframes fadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 0.5;
+    -webkit-transform: translate3d(1, 10%, 0);
+            transform: translate3d(1, 10%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 0.5;
+    -webkit-transform: translate3d(1, 10%, 0);
+            transform: translate3d(1, 10%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 
 section .banner h1 {
-  color: #fff;
+  color: #757882;
 }
 
-section .banner span {
-  color: #fff;
+section .banner .firstSpan {
+  background: #ffc04a;
+  background-color: #00071C;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffc04a), color-stop(25%, #ff9949));
+  background-image: linear-gradient(90deg, #ffc04a 0%, #ff9949 25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+section .banner .secondSpan {
+  background: #ffc04a;
+  background-color: #00071C;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ff8848), color-stop(75%, #ff7b48));
+  background-image: linear-gradient(90deg, #ff8848 50%, #ff7b48 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 section .banner a {
@@ -158,6 +270,29 @@ section .sectionImage {
   left: 70%;
   -webkit-clip-path: circle(25% at 35% 43%);
           clip-path: circle(25% at 35% 43%);
+  opacity: 0;
+  -webkit-animation: fadeUp 2s ease-in both;
+          animation: fadeUp 2s ease-in both;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 0.5;
+    -webkit-transform: translate3d(1, 10%, 0);
+            transform: translate3d(1, 10%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (max-width: 768px) {
@@ -337,7 +472,7 @@ footer {
   display: -ms-grid;
   display: grid;
   font-family: "Poppins", sans-serif;
-  height: 15vh;
+  height: 25vh;
   background-color: #00071C;
   color: #757882;
   bottom: 0;
@@ -346,8 +481,14 @@ footer {
 
 @media (max-width: 768px) {
   footer {
-    height: 20vh;
+    height: 30vh;
   }
+}
+
+footer a {
+  margin-left: 50%;
+  margin-top: 1%;
+  scroll-behavior: smooth;
 }
 
 footer p {
@@ -465,5 +606,26 @@ footer p {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+}
+
+#topButton {
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(75%, #ff7b48), to(tomato));
+  background: linear-gradient(90deg, #ff7b48 75%, tomato 100%);
+  -webkit-box-shadow: 0 0 10px #6a8b9b;
+          box-shadow: 0 0 10px #6a8b9b;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+#topButton:active {
+  background: #6a8b9b;
 }
 /*# sourceMappingURL=index.css.map */
