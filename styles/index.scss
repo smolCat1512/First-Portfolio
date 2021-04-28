@@ -113,6 +113,17 @@ header {
     -moz-text-fill-color: transparent;
 }
 
+.navItem1:hover {
+    background: $white;
+    background-color: $white;
+    background-image: $white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
 .navItem2 {
     background: rgb(255, 192, 74);
     background-color: $darkBlue;
@@ -195,7 +206,7 @@ section {
         .firstSpan {
             background: rgb(255, 192, 74);
             background-color: $darkBlue;
-            background-image: $firstfade;
+            background-image: $logofade;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -205,8 +216,8 @@ section {
 
         .secondSpan {
             background: rgb(255, 192, 74);
-            background-color: $darkBlue;
-            background-image: $thirdfade;
+            background-color: rgb(255, 192, 74);
+            background-image: rgb(255, 192, 74);;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -519,8 +530,6 @@ footer {
     }
 }
 
-
-// 
 #topButton {
     cursor: pointer;
     position: fixed;
@@ -539,3 +548,9 @@ footer {
 #topButton:active {
     background: #6a8b9b;
 }
+
+// #topButton:hover {
+//     img {
+//         filter: grayscale(100%);
+//     }
+// }
