@@ -194,21 +194,21 @@ hr {
     height: .25rem;
     width: 20%;
     margin: 0;
-    background: tomato;
+    background: $orange;
     border: none;
     transition: .3s ease-in-out;
 }
 
 .navItem2:hover~hr {
-    margin-left: 25%;
+    margin-left: 23%;
 }
 
 .navItem3:hover~hr {
-    margin-left: 50%;
+    margin-left: 49%;
 }
 
 .navItem4:hover~hr {
-    margin-left: 75%;
+    margin-left: 77%;
 }
 
 // Section styling for the banner area
