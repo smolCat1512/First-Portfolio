@@ -110,9 +110,9 @@ header nav a a:last-child {
 }
 
 .navItem1:hover {
-  background: #fff;
-  background-color: #fff;
-  background-image: #fff;
+  background: #757882;
+  background-color: #757882;
+  background-image: #757882;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -133,9 +133,9 @@ header nav a a:last-child {
 }
 
 .navItem2:hover {
-  background: #fff;
-  background-color: #fff;
-  background-image: #fff;
+  background: #757882;
+  background-color: #757882;
+  background-image: #757882;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -156,9 +156,9 @@ header nav a a:last-child {
 }
 
 .navItem3:hover {
-  background: #fff;
-  background-color: #fff;
-  background-image: #fff;
+  background: #757882;
+  background-color: #757882;
+  background-image: #757882;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -179,9 +179,9 @@ header nav a a:last-child {
 }
 
 .navItem4:hover {
-  background: #fff;
-  background-color: #fff;
-  background-image: #fff;
+  background: #757882;
+  background-color: #757882;
+  background-image: #757882;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -193,7 +193,7 @@ hr {
   height: .25rem;
   width: 20%;
   margin: 0;
-  background: #FF664D;
+  background: #757882;
   border: none;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
@@ -235,7 +235,7 @@ section .banner {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 10%;
   width: 50%;
   font-family: "Poppins", sans-serif;
@@ -325,18 +325,18 @@ section .banner .secondSpan {
 
 section .banner a {
   text-decoration: none;
-  color: #fff;
+  color: #00071C;
   padding: 20px;
   border-radius: 1000px;
   text-align: center;
-  background-color: #6a8b9b;
+  background: -webkit-gradient(linear, left top, right top, from(#ffc04a), color-stop(25%, #ff9949), color-stop(50%, #ff8848), color-stop(75%, #ff7b48), to(tomato));
+  background: linear-gradient(90deg, #ffc04a 0%, #ff9949 25%, #ff8848 50%, #ff7b48 75%, tomato 100%);
   width: 100px;
   margin-top: 5%;
 }
 
 section .banner a:hover {
-  color: #000000;
-  background-color: #6a8b9b;
+  color: #757882;
 }
 
 section .sectionImage {
@@ -385,6 +385,7 @@ main {
   grid-area: about;
   width: 100%;
   font-size: 42px;
+  color: #00071C;
 }
 
 .about-text {
@@ -393,6 +394,7 @@ main {
   font-weight: 300;
   font-size: 30px;
   width: 100%;
+  color: #00071C;
 }
 
 @media (max-width: 768px) {
@@ -409,6 +411,7 @@ main {
   font-size: 30px;
   width: 100%;
   margin-top: -50px;
+  color: #00071C;
 }
 
 @media (max-width: 768px) {
@@ -577,6 +580,11 @@ article {
   transition: all .5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  mix-blend-mode: lighten;
+}
+
+.projectsLink:hover p {
+  border: 2px solid #fff;
 }
 
 .contactsLink {
@@ -623,6 +631,10 @@ article {
   transition: all .5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.contactsLink:hover p {
+  border: 2px solid #fff;
 }
 
 #topButton {

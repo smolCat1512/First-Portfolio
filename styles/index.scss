@@ -114,9 +114,9 @@ header {
 }
 
 .navItem1:hover {
-    background: $white;
-    background-color: $white;
-    background-image: $white;
+    background: $lightGrey;
+    background-color: $lightGrey;
+    background-image: $lightGrey;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -136,9 +136,9 @@ header {
 }
 
 .navItem2:hover {
-    background: $white;
-    background-color: $white;
-    background-image: $white;
+    background: $lightGrey;
+    background-color: $lightGrey;
+    background-image: $lightGrey;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -158,9 +158,9 @@ header {
 }
 
 .navItem3:hover {
-    background: $white;
-    background-color: $white;
-    background-image: $white;
+    background: $lightGrey;
+    background-color: $lightGrey;
+    background-image: $lightGrey;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -180,9 +180,9 @@ header {
 }
 
 .navItem4:hover {
-    background: $white;
-    background-color: $white;
-    background-image: $white;
+    background: $lightGrey;
+    background-color: $lightGrey;
+    background-image: $lightGrey;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -194,7 +194,7 @@ hr {
     height: .25rem;
     width: 20%;
     margin: 0;
-    background: $orange;
+    background: $lightGrey;
     border: none;
     transition: .3s ease-in-out;
 }
@@ -227,7 +227,7 @@ section {
         flex-wrap: wrap;
         flex-direction: column;
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 10%;
         width: 50%;
         font-family: $poppins;
@@ -292,18 +292,17 @@ section {
 
         a {
             text-decoration: none;
-            color: $white;
+            color: $darkBlue;
             padding: 20px;
             border-radius: 1000px;
             text-align: center;
-            background-color: $lightBlue;
+            background: linear-gradient(90deg, rgba(255, 192, 74, 1) 0%, rgba(255, 153, 73, 1) 25%, rgba(255, 136, 72, 1) 50%, rgba(255, 123, 72, 1) 75%, rgba(255, 99, 71, 1) 100%);
             width: 100px;
             margin-top: 5%;
         }
 
         a:hover {
-            color: $black;
-            background-color: #6a8b9b;
+            color: $lightGrey;
         }
     }
 
@@ -350,6 +349,7 @@ main {
     grid-area: about;
     width: 100%;
     font-size: 42px;
+    color: $darkBlue;
 }
 
 .about-text {
@@ -358,6 +358,7 @@ main {
     font-weight: 300;
     font-size: 30px;
     width: 100%;
+    color: $darkBlue;
 
     @include mobile() {
         width: 100%;
@@ -372,12 +373,15 @@ main {
     font-size: 30px;
     width: 100%;
     margin-top: -50px;
+    color: $darkBlue;
 
     @include mobile() {
         width: 100%;
         font-size: 18px;
     }
 }
+
+
 
 .projectsLink {
     grid-area: projectsLink;
@@ -513,6 +517,11 @@ article {
 .projectsLink:hover {
     transition: all .5s;
     transform: scale(1.1);
+    mix-blend-mode: lighten;
+    
+    p {
+        border: 2px solid $white;
+    }
 }
 
 .contactsLink {
@@ -550,6 +559,10 @@ article {
 .contactsLink:hover {
     transition: all .5s;
     transform: scale(1.1);
+
+    p {
+        border: 2px solid $white;
+    }
 }
 
 // Styling for the return to top of page button
