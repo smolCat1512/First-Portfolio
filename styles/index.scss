@@ -190,12 +190,11 @@ header {
     -moz-text-fill-color: transparent;
 }
 
-// Section styling
+// Section styling for the banner area
 section {
     height: 100vh;
     background-color: $darkBlue;
     margin-top: -100px;
-    overflow-x: hidden;
 
     @include mobile {
         margin-top: -150px;
@@ -207,7 +206,7 @@ section {
         flex-wrap: wrap;
         flex-direction: column;
         position: absolute;
-        top: 10%;
+        top: 20%;
         left: 10%;
         width: 50%;
         font-family: $poppins;
@@ -240,6 +239,11 @@ section {
 
         h1 {
             color: $lightGrey;
+            font-size: 42px;
+
+            @include mobile() {
+                font-size: 30px;
+            }
         }
 
         .firstSpan {
@@ -283,13 +287,12 @@ section {
     }
 
     .sectionImage {
-        width: 25%;
-        height: 25%;
+        width: 400px;
+        height: 400px;
         object-fit: cover;
         position: absolute;
-        top: 10%;
+        top: 5%;
         left: 70%;
-        clip-path: circle(25% at 35% 43%);
 
         opacity: 0;
         animation: fadeUp 2s ease-in both;
@@ -299,11 +302,6 @@ section {
             from {
                 opacity: 0;
                 transform: translate3d(0, 20%, 0);
-            }
-
-            to {
-                opacity: 0.5;
-                transform: translate3d(1, 10%, 0);
             }
 
             to {
@@ -322,137 +320,54 @@ section {
 // Main area styling, setting up grid area and columns and stylings
 main {
     font-family: $sourceSans;
-    overflow-x: hidden;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "about about about aboutImage aboutImage"
-        "projectsImage projectsImage  projects projects projects"
-        "contact contact contact contactImage contactImage";
-
-    @include mobile() {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "about about"
-            "aboutImage aboutImage"
-            "projects projects"
-            "projectsImage projectsImage"
-            "contact contact"
-            "contactImage contactImage";
-    }
 }
 
 .about {
     grid-area: about;
     width: 100%;
-
-    .about-text {
-        font-family: $sourceSans;
-        font-weight: 300;
-        font-size: 24px;
-        width: 100%;
-
-        @include mobile() {
-            width: 100%;
-            font-size: 18px;
-        }
-
-        a {
-            color: $lightBlue;
-            margin-left: 10px;
-        }
-    }
+    font-size: 42px;
 }
 
-.aboutImage {
-    grid-area: aboutImage;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    clip-path: circle(66.3% at 66% 36%);
+.about-text {
+    grid-area: text1;
+    font-family: $sourceSans;
+    font-weight: 300;
+    font-size: 30px;
+    width: 100%;
 
     @include mobile() {
         width: 100%;
-        margin: 0;
+        font-size: 18px;
     }
 }
 
-.projectsImage {
-    grid-area: projectsImage;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    clip-path: circle(57.6% at 22% 67%);
-    filter: grayscale(75%);
+.about-text2 {
+    grid-area: text2;
+    font-family: $sourceSans;
+    font-weight: 300;
+    font-size: 30px;
+    width: 100%;
+    margin-top: -50px;
 
     @include mobile() {
         width: 100%;
-        margin: 0;
+        font-size: 18px;
     }
 }
 
-.projects {
-    grid-area: projects;
-
-    .projects-text {
-        font-family: $sourceSans;
-        font-weight: 300;
-        font-size: 24px;
-        width: 100%;
-
-        @include mobile() {
-            width: 100%;
-            font-size: 18px;
-        }
-
-        a {
-            color: $lightBlue;
-            margin-left: 10px;
-        }
-    }
-}
-
-.contact {
-    grid-area: contact;
-    padding-top: 5%;
-
-    .contact-text {
-        font-family: $sourceSans;
-        font-weight: 300;
-        font-size: 24px;
-        width: 100%;
-
-        @include mobile() {
-            width: 100%;
-            font-size: 18px;
-        }
-
-        a {
-            color: $lightBlue;
-            margin-left: 10px;
-        }
-    }
-}
-
-.contactImage {
-    grid-area: contactImage;
-    clip-path: circle(50% at 69% 65%);
-    padding-bottom: 100px;
+.projectsLink {
+    grid-area: projectsLink;
     width: 400px;
     height: 400px;
-
-
-    @include mobile() {
-        width: 100%;
-        margin: 0;
-    }
 }
 
-.read-more:hover {
-    color: $darkBlue;
+.contactsLink {
+    grid-area: contactsLink;
+    width: 400px;
+    height: 400px;
 }
 
 // Footer area styling
@@ -485,7 +400,7 @@ footer {
     }
 }
 
-// Animation properties to fade elements in  About section on scroll
+// Animation properties to fade elements in About section on scroll
 .fade-in-text {
     margin: 0;
     opacity: 0;
@@ -498,78 +413,77 @@ footer {
     transform: translateY(0px);
 }
 
+.fade-in-text1 {
+    margin: 0;
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: 3s all ease-in-out;
+}
+
+.text-appear1 {
+    opacity: 1;
+    transform: translateY(0px);
+    margin-top: 5%;
+}
+
 .fade-in-text2 {
     margin: 0;
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(-120px);
     transition: 3s all ease-in-out;
 }
 
 .text-appear2 {
     opacity: 1;
-    transform: translateX(80px);
+    transform: translateX(0px);
+    margin-top: 5%;
+}
 
-    @include mobile() {
-        transform: translateX(0px);
 
+article {
+    border-top: 2px solid $lightBlue;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "projects contact";
+    gap: 2em;
+    margin-bottom: 5%;
+}
+
+.projectsLink {
+    grid-area: projects;
+    position: relative;
+    text-decoration: none;
+    font-family: $poppins;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    background-image: url("/images/projects-image.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    color: $white;
+    filter: grayscale(100%);
+
+    p {
+        position: absolute;
+        left: 35%;
+        top: 35%;
+        font-size: 36px;
     }
 }
 
-// Fadce in property stylings for projects on index page
-.fade-in-project {
-    margin: 0;
-    opacity: 0;
-    transform: translateX(140px);
-    transition: 3s all ease-in-out;
+.projectsLink:hover {
+    transition: transform .5s ease;
+    transform: scale(1.1);
 }
 
-.text-appear-project {
-    opacity: 1;
-    transform: translateY(0px);
+.contactsLink {
+    grid-area: contact;
 }
 
-.fade-in-project2 {
-    margin: 0;
-    opacity: 0;
-    transform: translateX(-120px);
-    transition: 3s all ease-in-out;
-}
-
-.image-appear-project {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-// Animation properties to fade elements in Contact section on scroll
-.fade-in-contact {
-    margin: 0;
-    opacity: 0;
-    transform: translateX(-120px);
-    transition: 3s all ease-in-out;
-}
-
-.text-appear-contact {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-.fade-in-contact-image {
-    margin: 0;
-    opacity: 0;
-    transform: translateX(200px);
-    transition: 3s all ease-in-out;
-}
-
-.image-appear-contact {
-    opacity: 1;
-    transform: translateX(80px);
-
-    @include mobile() {
-        transform: translateX(0px);
-
-    }
-}
-
+// Styling for the return to top of page button
 #topButton {
     cursor: pointer;
     position: fixed;
@@ -587,19 +501,4 @@ footer {
 
 #topButton:active {
     background: #6a8b9b;
-}
-
-.test {
-    animation: slideInRight 2s ease both;
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(300px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
 }

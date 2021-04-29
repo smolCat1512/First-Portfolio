@@ -19,22 +19,22 @@
         <header>
             <a class="logo" href="/"><img class="logo" src="/images/logo.jpg" alt="Shaun Halliday Logo"></a>
             <nav>
-                <a class="navItem1" href="#">Home</a>
-                <a class="navItem2" href="/about.html">About</a>
-                <a class="navItem3" href="#">Projects</a>
-                <a class="navItem4" href="#">Contact</a>
+                <a class="navItem1" href="/">Home</a>
+                <a class="navItem2" href="#about">About</a>
+                <a class="navItem3" href="/projects.html">Projects</a>
+                <a class="navItem4" href="/contact.html">Contact</a>
             </nav>
         </header>
 
         <section>
 
             <div class="banner">
-                <h2>Hello, I am <span class="firstSpan">Shaun Halliday</span></h2>
+                <h1>Hello, I am <span class="firstSpan">Shaun Halliday</span></h1>
                 <p>I'm a <span class="secondSpan">Front-end web developer</span> from Skelmersale, West Lancs.</p>
                 <p>BSc (Hons) Web Design and Development Edge Hill University.</p>
                 <p>Most recently I have been building web apps with React and serverless providers like AWS, Google
                     Cloud Platform and Netlify</p>
-                <p>Additionally I have been building sites using HTML5, SASS and JavaScript for animation and motion design usage</p>
+                <p>Additionally I have been building sites using HTML5, SASS and JavaScript</p>
                 <a href="/projects.html">My Projects</a>
             </div>
 
@@ -42,43 +42,26 @@
 
         </section>
 
-        <p class="test">Testy test</p>
-
         <main>
 
-            <h2 class="about fade-in-text">About Me <p class="about-text">After working for 21 years since leaving high
-                    school wanted
-                    to change career, to something I have a passion for. I decided to attend Edge Hill University
-                    doing a degree in Web Design and Development, tech is something I have always been interested in,
-                    especially the web <a class="read-more" href="./about.html"> read
-                        more...</a></p>
-            </h2>
-
-            <img class="aboutImage fade-in-text2" src="./images/aboutMe.jpg"
-                alt="Picture of me, Shaun Halliday, with one of my cats">
-
-            <h2 class="projects fade-in-project">Projects
-                <p class="projects-text">I have undertaken numerous projects whilst in university, mostly front-end
-                    development. These involved use case studies that I
-                    undertook to research, design and develop sites <a href="./projects.html"> read
-                        more...</a></p>
-            </h2>
-
-            <img class="projectsImage fade-in-project2" src="./images/projects-image.jpg" alt="">
-
-            <h2 class="contact fade-in-contact">Contact
-                <p class="contact-text">Please contact me to discuss projects, proposals, work, or just for a chat (I am
-                    a
-                    friendly
-                    person.....honest). <a href="./contact.html"> read
-                        more...</a>
-                </p>
-
-            </h2>
-
-            <img class="contactImage fade-in-contact-image" src="./images/test.png" alt="">
+            <h2 id="about" class="about fade-in-text">About Me</h2>
+            <p class="about-text fade-in-text1">I'm a front-end developer, just finishing university, and hungry to
+                start a career building user-friendly websites and apps. Recently I have been building web apps with
+                React and serverless providers like Netlify.</p>
+            <p class="about-text2 fade-in-text2">I'm currently learning more about accessibility, API implementation and
+                delving into CSS/JS animations and motion design.</p>
 
         </main>
+
+        <article>
+
+            <a href="/projects.html" class="projectsLink">
+                <p>Projects</p>
+            </a>
+
+            <a href="/contact.html" class="contactsLink">Contact Me</a>
+
+        </article>
 
     </div>
 
@@ -91,7 +74,7 @@
             <script>
                 document.write(new Date().getFullYear())
             </script> Shaun Halliday</p>
-        <p>Website created and coded out by me</p>
+        <p>Website created and coded out by Shaun Halliday</p>
 
     </footer>
     <button id="topButton">
