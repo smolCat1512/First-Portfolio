@@ -190,6 +190,27 @@ header {
     -moz-text-fill-color: transparent;
 }
 
+hr {
+    height: .25rem;
+    width: 20%;
+    margin: 0;
+    background: tomato;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+.navItem2:hover~hr {
+    margin-left: 25%;
+}
+
+.navItem3:hover~hr {
+    margin-left: 50%;
+}
+
+.navItem4:hover~hr {
+    margin-left: 75%;
+}
+
 // Section styling for the banner area
 section {
     height: 100vh;
@@ -198,7 +219,7 @@ section {
 
     @include mobile {
         margin-top: -150px;
-        height: 110vh;
+        height: 120vh;
     }
 
     .banner {
@@ -206,7 +227,7 @@ section {
         flex-wrap: wrap;
         flex-direction: column;
         position: absolute;
-        top: 20%;
+        top: 15%;
         left: 10%;
         width: 50%;
         font-family: $poppins;
@@ -216,7 +237,7 @@ section {
         animation: fadeUp 2s ease-in both;
 
         @include mobile() {
-            top: 2%;
+            top: 4%;
             font-size: 12px;
         }
 
@@ -450,6 +471,11 @@ article {
     grid-template-areas: "projects contact";
     gap: 2em;
     margin-bottom: 5%;
+
+    @include mobile() {
+        grid-template-areas: "projects"
+            "contact";
+    }
 }
 
 .projectsLink {
@@ -466,21 +492,64 @@ article {
     color: $white;
     filter: grayscale(100%);
 
+    @include mobile() {
+        width: 300px;
+        height: 200px;
+    }
+
     p {
         position: absolute;
         left: 35%;
         top: 35%;
         font-size: 36px;
+
+        @include mobile() {
+            top: 20%;
+            left: 30%;
+        }
     }
 }
 
 .projectsLink:hover {
-    transition: transform .5s ease;
+    transition: all .5s;
     transform: scale(1.1);
 }
 
 .contactsLink {
     grid-area: contact;
+    position: relative;
+    text-decoration: none;
+    font-family: $poppins;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    background-image: url("/images/projects-image.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    color: $white;
+    filter: grayscale(100%);
+
+    @include mobile() {
+        width: 300px;
+        height: 200px;
+    }
+
+    p {
+        position: absolute;
+        left: 25%;
+        top: 35%;
+        font-size: 36px;
+
+        @include mobile() {
+            top: 20%;
+            left: 20%;
+        }
+    }
+}
+
+.contactsLink:hover {
+    transition: all .5s;
+    transform: scale(1.1);
 }
 
 // Styling for the return to top of page button
