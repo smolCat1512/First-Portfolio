@@ -44,6 +44,13 @@ body {
     padding: 0;
 }
 
+.content2 {
+    transition: transform .5s;
+    will-change: transform;
+    margin: 0;
+    padding: 0;
+}
+
 // Header styling
 header {
     display: flex;
