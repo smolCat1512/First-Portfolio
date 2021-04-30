@@ -54,22 +54,44 @@ header {
   }
 }
 
-header .logo {
-  width: 7em;
-  height: 7em;
+header div {
+  margin: 0;
+  padding: 0;
+}
+
+header div .logo {
   position: absolute;
+  border: none;
 }
 
 @media (max-width: 768px) {
-  header .logo {
-    width: 75px;
-    height: 75px;
+  header div .logo {
     left: 0;
   }
 }
 
+header div .logoText1 {
+  font-family: "Poppins", sans-serif;
+  color: #FFC04A;
+  position: absolute;
+  top: 26%;
+  left: 12%;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+header div .logoText2 {
+  font-family: "Poppins", sans-serif;
+  color: #FF6347;
+  position: absolute;
+  top: 52%;
+  left: 12.6%;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
 header nav {
-  margin-left: 60%;
+  margin-left: 50%;
   margin-top: 2.5%;
 }
 
@@ -83,6 +105,7 @@ header nav a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   padding: 15px;
+  font-size: 1.4em;
 }
 
 header nav a a:last-child {
@@ -198,6 +221,12 @@ hr {
   transition: .3s ease-in-out;
 }
 
+@media (max-width: 768px) {
+  hr {
+    visibility: hidden;
+  }
+}
+
 .navItem2:hover ~ hr {
   margin-left: 23%;
 }
@@ -211,14 +240,14 @@ hr {
 }
 
 section {
-  height: 100vh;
+  height: 110vh;
   background-color: #00071C;
-  margin-top: -100px;
+  margin-top: -310px;
 }
 
 @media (max-width: 768px) {
   section {
-    margin-top: -150px;
+    margin-top: -310px;
     height: 120vh;
   }
 }
@@ -234,7 +263,7 @@ section .banner {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 10%;
   width: 50%;
   font-family: "Poppins", sans-serif;
@@ -247,8 +276,8 @@ section .banner {
 
 @media (max-width: 768px) {
   section .banner {
-    top: 4%;
-    font-size: 12px;
+    top: 15%;
+    font-size: .5em;
   }
 }
 
@@ -299,6 +328,10 @@ section .banner h1 {
   }
 }
 
+section .banner p {
+  font-size: 1.5em;
+}
+
 section .banner .firstSpan {
   background: #ffc04a;
   background-color: #00071C;
@@ -330,8 +363,9 @@ section .banner a {
   text-align: center;
   background: -webkit-gradient(linear, left top, right top, from(#ffc04a), color-stop(25%, #ff9949), color-stop(50%, #ff8848), color-stop(75%, #ff7b48), to(tomato));
   background: linear-gradient(90deg, #ffc04a 0%, #ff9949 25%, #ff8848 50%, #ff7b48 75%, tomato 100%);
-  width: 100px;
+  width: 6em;
   margin-top: 5%;
+  font-size: 1.5em;
 }
 
 section .banner a:hover {
@@ -344,7 +378,7 @@ section .sectionImage {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  top: 5%;
+  top: 20%;
   left: 70%;
   border-radius: 5px;
   opacity: 0;
@@ -384,7 +418,7 @@ main {
 .about {
   grid-area: about;
   width: 100%;
-  font-size: 42px;
+  font-size: 3em;
   color: #00071C;
 }
 
@@ -392,7 +426,7 @@ main {
   grid-area: text1;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 1.5em;
   width: 100%;
   color: #00071C;
 }
@@ -408,7 +442,7 @@ main {
   grid-area: text2;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 1.5em;
   width: 100%;
   margin-top: -50px;
   color: #00071C;
@@ -442,6 +476,7 @@ footer {
   color: #757882;
   bottom: 0;
   overflow-x: hidden;
+  font-size: 1.5em;
 }
 
 @media (max-width: 768px) {
