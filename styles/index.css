@@ -2,7 +2,6 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 .content {
@@ -291,7 +290,7 @@ section .banner {
 
 section .banner h1 {
   color: #757882;
-  font-size: 42px;
+  font-size: 3em;
 }
 
 @media (max-width: 768px) {
@@ -327,7 +326,7 @@ section .banner a {
   text-decoration: none;
   color: #00071C;
   padding: 20px;
-  border-radius: 1000px;
+  border-radius: 5px;
   text-align: center;
   background: -webkit-gradient(linear, left top, right top, from(#ffc04a), color-stop(25%, #ff9949), color-stop(50%, #ff8848), color-stop(75%, #ff7b48), to(tomato));
   background: linear-gradient(90deg, #ffc04a 0%, #ff9949 25%, #ff8848 50%, #ff7b48 75%, tomato 100%);
@@ -347,6 +346,7 @@ section .sectionImage {
   position: absolute;
   top: 5%;
   left: 70%;
+  border-radius: 5px;
   opacity: 0;
   -webkit-animation: fadeUp 2s ease-in both;
           animation: fadeUp 2s ease-in both;
@@ -517,17 +517,19 @@ footer p {
 }
 
 article {
-  border-top: 2px solid #6a8b9b;
   margin-top: 5%;
   padding-top: 5%;
   padding-left: 10%;
+  padding-right: 10%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "projects contact";
   gap: 2em;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
+  background-color: #757882;
+  justify-items: center;
 }
 
 @media (max-width: 768px) {
@@ -548,7 +550,7 @@ article {
   height: 400px;
   background-image: url("/images/projects-image.jpg");
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 5px;
   color: #fff;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -580,11 +582,13 @@ article {
   transition: all .5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  mix-blend-mode: lighten;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .projectsLink:hover p {
-  border: 2px solid #fff;
+  color: red;
+  background-color: #fff;
 }
 
 .contactsLink {
@@ -599,7 +603,7 @@ article {
   height: 400px;
   background-image: url("/images/projects-image.jpg");
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 5px;
   color: #fff;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -631,10 +635,13 @@ article {
   transition: all .5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-filter: none;
+          filter: none;
 }
 
 .contactsLink:hover p {
-  border: 2px solid #fff;
+  color: red;
+  background-color: #fff;
 }
 
 #topButton {
