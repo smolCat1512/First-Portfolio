@@ -4,16 +4,6 @@ body {
   padding: 0;
 }
 
-.content {
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-  will-change: transform;
-  margin: 0;
-  padding: 0;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,55 +355,26 @@ section .banner .secondSpan {
 
 section .banner a {
   text-decoration: none;
-  color: #00071C;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(#ffc04a), color-stop(25%, #ff9949), color-stop(50%, #ff8848), color-stop(75%, #ff7b48), to(tomato));
-  background: linear-gradient(90deg, #ffc04a 0%, #ff9949 25%, #ff8848 50%, #ff7b48 75%, tomato 100%);
-  width: 6em;
-  margin-top: 5%;
-  font-size: 1.5em;
+  background: #ffc04a;
+  background-color: #00071C;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffc04a), color-stop(25%, #ff9949), color-stop(50%, #ff8848), color-stop(75%, #ff7b48), to(tomato));
+  background-image: linear-gradient(90deg, #ffc04a 0%, #ff9949 25%, #ff8848 50%, #ff7b48 75%, tomato 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 section .banner a:hover {
-  color: #757882;
-}
-
-section .sectionImage {
-  width: 400px;
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  top: 20%;
-  left: 70%;
-  border-radius: 5px;
-  opacity: 0;
-  -webkit-animation: fadeUp 2s ease-in both;
-          animation: fadeUp 2s ease-in both;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 20%, 0);
-            transform: translate3d(0, 20%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@media (max-width: 768px) {
-  section .sectionImage {
-    margin-left: 20px;
-    width: 30%;
-  }
+  background: #fff;
+  background-color: #fff;
+  background-image: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 main {
@@ -707,4 +668,4 @@ article {
 #topButton:active {
   background: #6a8b9b;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=contact.css.map */
