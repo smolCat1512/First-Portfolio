@@ -276,6 +276,7 @@ section {
         @include mobile() {
             top: 17%;
             font-size: .5em;
+            width: 80%;
         }
 
         @keyframes fadeUp {
@@ -380,8 +381,7 @@ section {
         }
 
         @include mobile() {
-            margin-left: 20px;
-            width: 30%;
+            display: none;
         }
     }
 }

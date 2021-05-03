@@ -288,6 +288,7 @@ section .banner {
   section .banner {
     top: 17%;
     font-size: .5em;
+    width: 80%;
   }
 }
 
@@ -422,8 +423,7 @@ section .sectionImage {
 
 @media (max-width: 768px) {
   section .sectionImage {
-    margin-left: 20px;
-    width: 30%;
+    display: none;
   }
 }
 
