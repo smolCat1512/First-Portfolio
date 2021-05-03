@@ -130,6 +130,17 @@ header nav a a:last-child {
   -moz-text-fill-color: transparent;
 }
 
+.active {
+  background: #fff;
+  background-color: #fff;
+  background-image: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
 .navItem1:hover {
   background: #757882;
   background-color: #757882;

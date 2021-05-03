@@ -177,18 +177,6 @@ header nav a a:last-child {
   -moz-text-fill-color: transparent;
 }
 
-.navItem4 {
-  background: #ffc04a;
-  background-color: #00071C;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(75%, #ff7b48), to(tomato));
-  background-image: linear-gradient(90deg, #ff7b48 75%, tomato 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-
 .navItem4:hover {
   background: #757882;
   background-color: #757882;
@@ -226,6 +214,17 @@ hr {
 
 .navItem4:hover ~ hr {
   margin-left: 77%;
+}
+
+.active {
+  background: #fff;
+  background-color: #fff;
+  background-image: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 section {

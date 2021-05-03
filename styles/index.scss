@@ -135,6 +135,17 @@ header {
     -moz-text-fill-color: transparent;
 }
 
+.active {
+    background: $white;
+    background-color: $white;
+    background-image: $white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
 .navItem1:hover {
     background: $lightGrey;
     background-color: $lightGrey;
