@@ -227,20 +227,21 @@ hr {
   -moz-text-fill-color: transparent;
 }
 
-section {
+main {
   height: 110vh;
   background-color: #00071C;
   margin-top: -310px;
+  padding-bottom: 10%;
 }
 
 @media (max-width: 768px) {
-  section {
+  main {
     margin-top: -310px;
-    height: 130vh;
+    height: 150vh;
   }
 }
 
-section .banner {
+main .banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,9 +264,11 @@ section .banner {
 }
 
 @media (max-width: 768px) {
-  section .banner {
-    top: 17%;
+  main .banner {
+    top: 20%;
+    left: 5%;
     font-size: .5em;
+    width: 90%;
   }
 }
 
@@ -305,31 +308,31 @@ section .banner {
   }
 }
 
-section .banner h1 {
+main .banner h1 {
   color: #757882;
   font-size: 3em;
 }
 
 @media (max-width: 768px) {
-  section .banner h1 {
+  main .banner h1 {
     font-size: 30px;
   }
 }
 
-section .banner p {
+main .banner p {
   padding: 0;
   margin: 0;
   font-size: 1.5em;
-  line-height: 1.5em;
+  line-height: 2.5em;
 }
 
 @media (max-width: 768px) {
-  section .banner p {
+  main .banner p {
     font-size: 2em;
   }
 }
 
-section .banner .firstSpan {
+main .banner .firstSpan {
   background: #ffc04a;
   background-color: #00071C;
   background-image: -webkit-gradient(linear, left top, right top, from(#ffc04a), color-stop(25%, #ff9949), color-stop(50%, #ff8848), color-stop(75%, #ff7b48), to(tomato));
@@ -341,7 +344,7 @@ section .banner .firstSpan {
   -moz-text-fill-color: transparent;
 }
 
-section .banner .secondSpan {
+main .banner .secondSpan {
   background: #ffc04a;
   background-color: #ffc04a;
   background-image: #ffc04a;
@@ -352,7 +355,7 @@ section .banner .secondSpan {
   -moz-text-fill-color: transparent;
 }
 
-section .banner a {
+main .banner a {
   text-decoration: none;
   background: #ffc04a;
   background-color: #00071C;
@@ -365,7 +368,7 @@ section .banner a {
   -moz-text-fill-color: transparent;
 }
 
-section .banner a:hover {
+main .banner a:hover {
   background: #fff;
   background-color: #fff;
   background-image: #fff;
@@ -376,63 +379,32 @@ section .banner a:hover {
   -moz-text-fill-color: transparent;
 }
 
-main {
-  font-family: "Source Sans Pro", sans-serif;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-}
-
-.about {
-  grid-area: about;
-  width: 100%;
-  font-size: 3em;
-  color: #00071C;
-}
-
-.about-text {
-  grid-area: text1;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  font-size: 1.5em;
-  width: 100%;
-  color: #00071C;
+main .banner .form {
+  position: absolute;
+  width: 50%;
+  top: 55%;
+  left: 80%;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
-  .about-text {
-    width: 100%;
-    font-size: 18px;
+  main .banner .form {
+    top: 110%;
+    left: 0%;
+    width: 90%;
   }
 }
 
-.about-text2 {
-  grid-area: text2;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  font-size: 1.5em;
+main .banner .form .form-control {
   width: 100%;
-  margin-top: -50px;
-  color: #00071C;
+  font-size: medium;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  padding-left: 1%;
 }
 
-@media (max-width: 768px) {
-  .about-text2 {
-    width: 100%;
-    font-size: 18px;
-  }
-}
-
-.projectsLink {
-  grid-area: projectsLink;
-  width: 400px;
-  height: 400px;
-}
-
-.contactsLink {
-  grid-area: contactsLink;
-  width: 400px;
-  height: 400px;
+main .banner .form button {
+  padding: 1em;
 }
 
 footer {

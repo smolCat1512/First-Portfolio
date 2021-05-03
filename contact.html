@@ -7,38 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/contact.css">
     <link rel="icon" type="image/ico" href="/logo.ico">
-    <title>Shaun Halliday - Front-end Developer - Home</title>
+    <title>Shaun Halliday - Front-end Developer - Contact</title>
 </head>
 
-<body id="top">
+<body>
 
-        <header>
-            <div class="logo">
-                <a href="/"><img src="/images/logo.jpg" alt="Shaun Halliday Logo"></a>
-                <p class="logoText1">Shaun</p>
-                <p class="logoText2">Halliday</p>
-            </div>
-            <nav>
-                <a class="navItem1" href="/">Home</a>
-                <a class="navItem2" href="./index.html/#about">About</a>
-                <a class="navItem3" href="/projects.html">Projects</a>
-                <a class="navItem4 active" href="/contact.html">Contact</a>
-                <hr />
-            </nav>
-        </header>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="/images/logo.jpg" alt="Shaun Halliday Logo"></a>
+            <p class="logoText1">Shaun</p>
+            <p class="logoText2">Halliday</p>
+        </div>
+        <nav>
+            <a class="navItem1" href="/">Home</a>
+            <a class="navItem2" href="/">About</a>
+            <a class="navItem3" href="/projects.html">Projects</a>
+            <a class="navItem4 active" href="/contact.html">Contact</a>
+            <hr />
+        </nav>
+    </header>
 
-        <section>
+    <main>
 
-            <div class="banner">
-                <h1><span class="firstSpan">Get in touch...Or just say Hello!</span></h1>
-                <p>Fill in form or just click a link....whichever is best for you<p>
-                <h2>Socials/Contacts:</h2>
-                <p>Twitter: <a target="_blank" href="https://twitter.com/ShaunHalliday4">My Twitter</a></p>
-                <p>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/shaun-halliday-5001a6b2/">My LinkedIn</a></p>
-                <p>If you prefer email: <a target="_blank" href="mailto:shaunhalliday1512@gmail.com">My Email</a></p>
-            </div>
+        <div class="banner">
+            <h1><span class="firstSpan">Get in touch...Or just say Hello!</span></h1>
+            <p>Fill in form or just click a link....whichever is best for you<p>
+                    <h2>Socials/Contacts:</h2>
+                    <p>Twitter: <a target="_blank" href="https://twitter.com/ShaunHalliday4">My Twitter</a></p>
+                    <p>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/shaun-halliday-5001a6b2/">My
+                            LinkedIn</a></p>
+                    <p>If you prefer email: <a target="_blank" href="mailto:shaunhalliday1512@gmail.com">My Email</a>
+                    </p>
+                    <p>Bitbucket: <a target="_blank" href="https://bitbucket.org/24032620/">My Bitbucket Repos</a></p>
 
-        </section>
+                    <div class="form">
+
+                        <form action="https://formsubmit.co/shaunhalliday1512@gmail.com" method="POST">
+                            <textarea type="text" name="name" class="form-control" placeholder="Name" required rows="1"></textarea>
+                            <textarea class="form-control" type="email" name="email" placeholder="Email Address" required rows="1"></textarea>
+                            <textarea placeholder="Your Message" class="form-control" name="message" rows="5"
+                                required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+
+                    </div>
+
+        </div>
+
+
+
+    </main>
 
     <footer>
 
@@ -54,7 +72,7 @@
     </footer>
 
     <script src="/javascript/fade.js"></script>
-    
+
 </body>
 
 </html>

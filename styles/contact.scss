@@ -221,24 +221,25 @@ hr {
 
 .active {
     background: $white;
-            background-color: $white;
-            background-image: $white;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-background-clip: text;
-            -moz-text-fill-color: transparent;
+    background-color: $white;
+    background-image: $white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
-// Section styling for the banner area
-section {
+// Section styling for the main area
+main {
     height: 110vh;
     background-color: $darkBlue;
     margin-top: -310px;
+    padding-bottom: 10%;
 
     @include mobile {
         margin-top: -310px;
-        height: 130vh;
+        height: 150vh;
     }
 
     .banner {
@@ -256,8 +257,10 @@ section {
         animation: fadeUp 2s ease-in both;
 
         @include mobile() {
-            top: 17%;
+            top: 20%;
+            left: 5%;
             font-size: .5em;
+            width: 90%;
         }
 
         @keyframes fadeUp {
@@ -290,7 +293,7 @@ section {
             padding: 0;
             margin: 0;
             font-size: 1.5em;
-            line-height: 1.5em;
+            line-height: 2.5em;
 
             @include mobile() {
                 font-size: 2em;
@@ -341,65 +344,33 @@ section {
             -moz-background-clip: text;
             -moz-text-fill-color: transparent;
         }
+
+        .form {
+            position: absolute;
+            width: 50%;
+            top: 55%;
+            left: 80%;
+            color: #fff;
+
+            @include mobile() {
+                top: 110%;
+                left: 0%;
+                width: 90%;
+            }
+
+            .form-control {
+                width: 100%;
+                font-size: medium;
+                font-family: $poppins;
+                text-align: left;
+                padding-left: 1%;
+            }
+
+            button {
+                padding: 1em;
+            }
+        }
     }
-}
-
-// Main area styling, setting up grid area and columns and stylings
-main {
-    font-family: $sourceSans;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-}
-
-.about {
-    grid-area: about;
-    width: 100%;
-    font-size: 3em;
-    color: $darkBlue;
-}
-
-.about-text {
-    grid-area: text1;
-    font-family: $sourceSans;
-    font-weight: 300;
-    font-size: 1.5em;
-    width: 100%;
-    color: $darkBlue;
-
-    @include mobile() {
-        width: 100%;
-        font-size: 18px;
-    }
-}
-
-.about-text2 {
-    grid-area: text2;
-    font-family: $sourceSans;
-    font-weight: 300;
-    font-size: 1.5em;
-    width: 100%;
-    margin-top: -50px;
-    color: $darkBlue;
-
-    @include mobile() {
-        width: 100%;
-        font-size: 18px;
-    }
-}
-
-
-
-.projectsLink {
-    grid-area: projectsLink;
-    width: 400px;
-    height: 400px;
-}
-
-.contactsLink {
-    grid-area: contactsLink;
-    width: 400px;
-    height: 400px;
 }
 
 // Footer area styling
