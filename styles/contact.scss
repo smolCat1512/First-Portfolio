@@ -96,7 +96,7 @@ header {
         margin-top: 2.5%;
 
         @include mobile() {
-            margin-left: 15%;
+            margin-left: 10%;
         }
 
         a {
@@ -110,7 +110,7 @@ header {
             }
 
             @include mobile() {
-                font-size: 12px;
+                font-size: 18px;
                 padding: 5px;
             }
         }

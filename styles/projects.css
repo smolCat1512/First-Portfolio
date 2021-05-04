@@ -86,7 +86,7 @@ header nav {
 
 @media (max-width: 768px) {
   header nav {
-    margin-left: 15%;
+    margin-left: 10%;
   }
 }
 
@@ -103,7 +103,7 @@ header nav a a:last-child {
 
 @media (max-width: 768px) {
   header nav a {
-    font-size: 12px;
+    font-size: 18px;
     padding: 5px;
   }
 }
@@ -456,6 +456,7 @@ main .project-wrapper img {
   -ms-grid-column-span: 2;
   grid-area: img;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 main .project-wrapper h2 {
@@ -509,12 +510,20 @@ main .project-wrapper a {
   color: #000000;
   background-color: #6a8b9b;
   border-radius: 5px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 @media (max-width: 768px) {
   main .project-wrapper a {
     font-size: 1em;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
+}
+
+main .project-wrapper a:hover {
+  color: #fff;
 }
 
 main .project-wrapper .casestudy {
@@ -545,12 +554,6 @@ footer {
   footer {
     height: 30vh;
   }
-}
-
-footer a {
-  margin-left: 50%;
-  margin-top: 1%;
-  scroll-behavior: smooth;
 }
 
 footer p {

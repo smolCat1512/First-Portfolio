@@ -103,7 +103,7 @@ header {
         margin-top: 2.5%;
 
         @include mobile() {
-            margin-left: 15%;
+            margin-left: 10%;
         }
 
         a {
@@ -117,7 +117,7 @@ header {
             }
 
             @include mobile() {
-                font-size: 12px;
+                font-size: 18px;
                 padding: 5px;
             }
         }
@@ -556,7 +556,7 @@ article {
         height: 200px;
     }
 
-    p {
+    h2 {
         position: absolute;
         left: 35%;
         top: 35%;
@@ -574,7 +574,7 @@ article {
     transform: scale(1.1);
     filter: none;
 
-    p {
+    h2 {
         color: red;
         background-color: $white;
     }
@@ -598,9 +598,10 @@ article {
     @include mobile() {
         width: 300px;
         height: 200px;
+        background-position: 0;
     }
 
-    p {
+    h2 {
         position: absolute;
         left: 25%;
         top: 35%;
@@ -618,7 +619,7 @@ article {
     transform: scale(1.1);
     filter: none;
 
-    p {
+    h2 {
         color: red;
         background-color: $white;
     }

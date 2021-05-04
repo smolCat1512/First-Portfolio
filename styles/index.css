@@ -96,7 +96,7 @@ header nav {
 
 @media (max-width: 768px) {
   header nav {
-    margin-left: 15%;
+    margin-left: 10%;
   }
 }
 
@@ -113,7 +113,7 @@ header nav a a:last-child {
 
 @media (max-width: 768px) {
   header nav a {
-    font-size: 12px;
+    font-size: 18px;
     padding: 5px;
   }
 }
@@ -627,7 +627,7 @@ article {
   }
 }
 
-.projectsLink p {
+.projectsLink h2 {
   position: absolute;
   left: 35%;
   top: 35%;
@@ -635,7 +635,7 @@ article {
 }
 
 @media (max-width: 768px) {
-  .projectsLink p {
+  .projectsLink h2 {
     top: 20%;
     left: 30%;
   }
@@ -650,7 +650,7 @@ article {
           filter: none;
 }
 
-.projectsLink:hover p {
+.projectsLink:hover h2 {
   color: red;
   background-color: #fff;
 }
@@ -678,10 +678,11 @@ article {
   .contactsLink {
     width: 300px;
     height: 200px;
+    background-position: 0;
   }
 }
 
-.contactsLink p {
+.contactsLink h2 {
   position: absolute;
   left: 25%;
   top: 35%;
@@ -689,7 +690,7 @@ article {
 }
 
 @media (max-width: 768px) {
-  .contactsLink p {
+  .contactsLink h2 {
     top: 20%;
     left: 20%;
   }
@@ -704,7 +705,7 @@ article {
           filter: none;
 }
 
-.contactsLink:hover p {
+.contactsLink:hover h2 {
   color: red;
   background-color: #fff;
 }

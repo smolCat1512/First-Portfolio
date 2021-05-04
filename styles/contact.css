@@ -86,7 +86,7 @@ header nav {
 
 @media (max-width: 768px) {
   header nav {
-    margin-left: 15%;
+    margin-left: 10%;
   }
 }
 
@@ -103,7 +103,7 @@ header nav a a:last-child {
 
 @media (max-width: 768px) {
   header nav a {
-    font-size: 12px;
+    font-size: 18px;
     padding: 5px;
   }
 }
