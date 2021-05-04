@@ -443,6 +443,7 @@ main .project-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: 'img' 'h2' 'p' 'casestudy' 'applink';
+    padding-bottom: 40%;
   }
 }
 
@@ -454,14 +455,23 @@ main .project-wrapper img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: img;
+  border-radius: 5px;
 }
 
 main .project-wrapper h2 {
+  margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: h2;
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  main .project-wrapper h2 {
+    font-size: 1em;
+  }
 }
 
 main .project-wrapper p {
@@ -470,6 +480,41 @@ main .project-wrapper p {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: p;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  main .project-wrapper p {
+    font-size: 1em;
+  }
+}
+
+main .project-wrapper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+  color: #000000;
+  background-color: #6a8b9b;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  main .project-wrapper a {
+    font-size: 1em;
+  }
 }
 
 main .project-wrapper .casestudy {
