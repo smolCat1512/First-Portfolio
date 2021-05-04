@@ -250,13 +250,13 @@ hr {
 
 // Section styling for the banner area
 section {
-    height: 110vh;
+    height: 115vh;
     background-color: $darkBlue;
     margin-top: -310px;
 
     @include mobile {
         margin-top: -310px;
-        height: 130vh;
+        height: 110vh;
     }
 
     .banner {
@@ -274,7 +274,7 @@ section {
         animation: fadeUp 2s ease-in both;
 
         @include mobile() {
-            top: 17%;
+            top: 25%;
             font-size: .5em;
             width: 80%;
         }
@@ -454,18 +454,13 @@ footer {
         height: 30vh;
     }
 
-    a {
-        margin-left: 50%;
-        margin-top: 1%;
-        scroll-behavior: smooth;
-    }
-
     p {
         padding-left: 10%;
 
         @include mobile() {
             padding: 0;
-            justify-content: center;
+            padding-left: 2%;
+            justify-content: left;
         }
     }
 }
@@ -475,7 +470,7 @@ footer {
     margin: 0;
     opacity: 0;
     transform: translateX(-120px);
-    transition: 3s all ease-in-out;
+    transition: 1s all ease-in-out;
 }
 
 .text-appear {
@@ -487,7 +482,7 @@ footer {
     margin: 0;
     opacity: 0;
     transform: translateX(-120px);
-    transition: 3s all ease-in-out;
+    transition: 1.5s all ease-in-out;
 }
 
 .text-appear1 {
@@ -500,10 +495,23 @@ footer {
     margin: 0;
     opacity: 0;
     transform: translateX(-120px);
-    transition: 3s all ease-in-out;
+    transition: 2s all ease-in-out;
 }
 
 .text-appear2 {
+    opacity: 1;
+    transform: translateX(0px);
+    margin-top: 5%;
+}
+
+.fade-in-text3 {
+    margin: 0;
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: 2s all ease-in-out;
+}
+
+.text-appear3 {
     opacity: 1;
     transform: translateX(0px);
     margin-top: 5%;
@@ -518,7 +526,7 @@ article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "projects contact";
-    gap: 2em;
+    gap: 3em;
     padding-bottom: 5%;
     background-color: $lightGrey;
     justify-items: center;
@@ -562,7 +570,7 @@ article {
 }
 
 .projectsLink:hover {
-    transition: all .5s;
+    transition: all 1s;
     transform: scale(1.1);
     filter: none;
 
@@ -580,8 +588,9 @@ article {
     text-align: center;
     width: 400px;
     height: 400px;
-    background-image: url("/images/projects-image.jpg");
+    background-image: url("/images/contact.jpeg");
     background-size: cover;
+    background-position: -50px;
     border-radius: 5px;
     color: $white;
     filter: grayscale(100%);
@@ -605,7 +614,7 @@ article {
 }
 
 .contactsLink:hover {
-    transition: all .5s;
+    transition: all 1s;
     transform: scale(1.1);
     filter: none;
 

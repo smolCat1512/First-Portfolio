@@ -45,3 +45,20 @@ function scrollAppear2() {
 }
 
 window.addEventListener('scroll', scrollAppear2);
+
+
+/*  scrollAppear3 function, when scroll down page any div or container
+ *   containing content fades in as needed desired elements
+ */
+
+function scrollAppear3() {
+    var fadeInText3 = document.querySelector('.fade-in-text3');
+    var textPosition3 = fadeInText3.getBoundingClientRect().top;
+    var screenPosition3 = window.innerHeight / 1.2;
+
+    if (textPosition3 < screenPosition3) {
+        fadeInText3.classList.add('text-appear3');
+    }
+}
+
+window.addEventListener('scroll', scrollAppear3);
