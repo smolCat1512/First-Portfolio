@@ -417,6 +417,7 @@ footer {
   bottom: 0;
   overflow-x: hidden;
   font-size: 1.5em;
+  border-top: 2px solid #757882;
 }
 
 @media (max-width: 768px) {

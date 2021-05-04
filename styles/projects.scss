@@ -241,16 +241,16 @@ hr {
     -moz-text-fill-color: transparent;
 }
 
-// Section styling for the main area
-main {
-    height: 110vh;
+// Section styling for the section area
+section {
+    height: 90vh;
     background-color: $darkBlue;
     margin-top: -310px;
     padding-bottom: 10%;
 
     @include mobile {
         margin-top: -310px;
-        height: 150vh;
+        height: 80vh;
     }
 
     .banner {
@@ -258,7 +258,7 @@ main {
         flex-wrap: wrap;
         flex-direction: column;
         position: absolute;
-        top: 20%;
+        top: 25%;
         left: 10%;
         width: 50%;
         font-family: $poppins;
@@ -268,7 +268,7 @@ main {
         animation: fadeUp 2s ease-in both;
 
         @include mobile() {
-            top: 20%;
+            top: 30%;
             left: 5%;
             font-size: .5em;
             width: 90%;
@@ -384,6 +384,63 @@ main {
     }
 }
 
+
+// Main area styling
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        padding-bottom: 10%;
+        grid-template-areas: 'img img h2 h2'
+            'img img p p'
+            'img img casestudy applink';
+
+            @include mobile() {
+                grid-template-columns: 1fr;
+                grid-template-areas: 'img'
+                'h2'
+                'p'
+                'casestudy'
+                'applink';
+            }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            grid-area: img;
+        }
+
+        h2 {
+            font-family: $sourceSans;
+            grid-area: h2;
+        }
+
+        p {
+            font-family: $sourceSans;
+            grid-area: p;
+        }
+
+        .casestudy {
+            grid-area: casestudy;
+        }
+
+        .applink {
+            grid-area: applink;
+        }
+    }
+
+}
+
+
+
+
 // Footer area styling
 footer {
     display: grid;
@@ -412,151 +469,6 @@ footer {
             padding: 0;
             justify-content: center;
         }
-    }
-}
-
-// Animation properties to fade elements in About section on scroll
-.fade-in-text {
-    margin: 0;
-    opacity: 0;
-    transform: translateX(-120px);
-    transition: 3s all ease-in-out;
-}
-
-.text-appear {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-.fade-in-text1 {
-    margin: 0;
-    opacity: 0;
-    transform: translateX(-120px);
-    transition: 3s all ease-in-out;
-}
-
-.text-appear1 {
-    opacity: 1;
-    transform: translateY(0px);
-    margin-top: 5%;
-}
-
-.fade-in-text2 {
-    margin: 0;
-    opacity: 0;
-    transform: translateX(-120px);
-    transition: 3s all ease-in-out;
-}
-
-.text-appear2 {
-    opacity: 1;
-    transform: translateX(0px);
-    margin-top: 5%;
-}
-
-
-article {
-    margin-top: 5%;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "projects contact";
-    gap: 2em;
-    padding-bottom: 5%;
-    background-color: $lightGrey;
-    justify-items: center;
-
-    @include mobile() {
-        grid-template-areas: "projects"
-            "contact";
-    }
-}
-
-.projectsLink {
-    grid-area: projects;
-    position: relative;
-    text-decoration: none;
-    font-family: $poppins;
-    text-align: center;
-    width: 400px;
-    height: 400px;
-    background-image: url("/images/projects-image.jpg");
-    background-size: cover;
-    border-radius: 5px;
-    color: $white;
-    filter: grayscale(100%);
-
-    @include mobile() {
-        width: 300px;
-        height: 200px;
-    }
-
-    p {
-        position: absolute;
-        left: 35%;
-        top: 35%;
-        font-size: 36px;
-
-        @include mobile() {
-            top: 20%;
-            left: 30%;
-        }
-    }
-}
-
-.projectsLink:hover {
-    transition: all .5s;
-    transform: scale(1.1);
-    filter: none;
-
-    p {
-        color: red;
-        background-color: $white;
-    }
-}
-
-.contactsLink {
-    grid-area: contact;
-    position: relative;
-    text-decoration: none;
-    font-family: $poppins;
-    text-align: center;
-    width: 400px;
-    height: 400px;
-    background-image: url("/images/projects-image.jpg");
-    background-size: cover;
-    border-radius: 5px;
-    color: $white;
-    filter: grayscale(100%);
-
-    @include mobile() {
-        width: 300px;
-        height: 200px;
-    }
-
-    p {
-        position: absolute;
-        left: 25%;
-        top: 35%;
-        font-size: 36px;
-
-        @include mobile() {
-            top: 20%;
-            left: 20%;
-        }
-    }
-}
-
-.contactsLink:hover {
-    transition: all .5s;
-    transform: scale(1.1);
-    filter: none;
-
-    p {
-        color: red;
-        background-color: $white;
     }
 }
 

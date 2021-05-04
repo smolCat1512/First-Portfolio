@@ -7,50 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/projects.css">
     <link rel="icon" type="image/ico" href="/logo.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Shaun Halliday - Front-end Developer - Projects</title>
 </head>
 
-<body>
+<body id="top">
 
-    <header>
-        <div class="logo">
-            <a href="/"><img src="/images/logo.jpg" alt="Shaun Halliday Logo"></a>
-            <p class="logoText1">Shaun</p>
-            <p class="logoText2">Halliday</p>
-        </div>
-        <nav>
-            <a class="navItem1" href="/">Home</a>
-            <a class="navItem2" href="/">About</a>
-            <a class="navItem3 active" href="/projects.html">Projects</a>
-            <a class="navItem4" href="/contact.html">Contact</a>
-            <hr />
-        </nav>
-    </header>
+    <div class="content">
+
+        <header>
+            <div class="logo">
+                <a href="/"><img src="/images/logo.jpg" alt="Shaun Halliday Logo"></a>
+                <p class="logoText1">Shaun</p>
+                <p class="logoText2">Halliday</p>
+            </div>
+            <nav>
+                <a class="navItem1" href="/">Home</a>
+                <a class="navItem2" href="/">About</a>
+                <a class="navItem3 active" href="/projects.html">Projects</a>
+                <a class="navItem4" href="/contact.html">Contact</a>
+                <hr />
+            </nav>
+        </header>
+
+        <section>
+
+            <div class="banner">
+                <h1><span class="firstSpan">Projects page</span></h1>
+                <p>This is a small collection of projects of mine, will be added to on an ongoing basis<p>
+                        <p>Code for these projects and other bits and bobs can be seen at: <a target="_blank"
+                                href="https://bitbucket.org/24032620/">My Bitbucket
+                                Repos</a></p>
+            </div>
+
+        </section>
+
+    </div>
 
     <main>
 
-        <div class="banner">
-            <h1><span class="firstSpan">Get in touch...Or just say Hello!</span></h1>
-            <p>Fill in form or just click a link....whichever is best for you &#128513;<p>
-                    <h2>Socials/Contacts:</h2>
-                    <p>Twitter: <a target="_blank" href="https://twitter.com/ShaunHalliday4">My Twitter</a></p>
-                    <p>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/shaun-halliday-5001a6b2/">My
-                            LinkedIn</a></p>
-                    <p>If you prefer email: <a target="_blank" href="mailto:shaunhalliday1512@gmail.com">My Email</a>
-                    </p>
-                    <p>Bitbucket: <a target="_blank" href="https://bitbucket.org/24032620/">My Bitbucket Repos</a></p>
-
+        <div class="project-wrapper">
+            <img data-aos="fade-right" data-aos-duration="1500" data-aos-offset="400" data-aos-easing="ease-in-sine"
+                src="/images/harry-collins.jpeg" alt="Harry Collins athlete development website screenshot">
+            <h2 data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="1500">Harry
+                Collins Athlete Development site</h2>
+            <p data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="1500">An
+                elite athlete development site build, using HTML5, CSS3 (via Sass preprocessor) and Javascript.
+                Utilising CSS
+                animations via Javascript scroll events to detect screen dimensions. Full research, UX/UI, design and build process followed.</p>
+            <a data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="1500"
+                class="casestudy" target="_blank" href="">Case Study</a>
+            <a data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="1500"
+                class="applink" target="_blank" href="">App Link</a>
         </div>
 
 
+        <div class="project-wrapper">
+            <img data-aos="fade-right" data-aos-duration="1500" data-aos-offset="400" data-aos-easing="ease-in-sine"
+                src="/images/harry-collins.jpeg" alt="John Marley Pianos website screenshot">
+            <h2 data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="1500">John
+                Marley Pianos site</h2>
+            <p data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="1500">A
+                piano shop site build, HTML5, CSS3 (via Sass preprocessor) and Javascript. CSS animations harnessed
+                using HTML, CSS and Javascript events. Full research, UX/UI, design and build process followed.</p>
+            <a data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="1500"
+                class="casestudy" target="_blank" href="">Case Study</a>
+            <a data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="1500"
+                class="applink" target="_blank" href="">App Link</a>
+        </div>
 
     </main>
 
+
     <footer>
 
-        <!-- <a id="topButton">
-            <img src="/images/top64.jpg" alt="return to top orange arrow icon, turns grey on hover">
-        </a> -->
         <p>&#169;
             <script>
                 document.write(new Date().getFullYear())
@@ -59,8 +91,16 @@
 
     </footer>
 
-    <script src="/javascript/fade.js"></script>
+    <button id="topButton">
+        <i class="material-icons">arrow_upward</i>
+    </button>
 
+    <script src="/javascript/fade.js"></script>
+    <script src="/javascript/skew.js"></script>
+    <script src="/javascript/top.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
