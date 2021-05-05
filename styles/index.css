@@ -103,18 +103,19 @@ header nav {
 header nav a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  padding: 15px;
+  padding: 1em;
   font-size: 1.4em;
+  overflow-x: hidden;
 }
 
 header nav a a:last-child {
-  padding-right: 10px;
+  padding-right: 1em;
 }
 
 @media (max-width: 768px) {
   header nav a {
-    font-size: 18px;
-    padding: 5px;
+    font-size: 1.2em;
+    padding: .5em;
   }
 }
 
@@ -252,12 +253,12 @@ hr {
 section {
   height: 115vh;
   background-color: #00071C;
-  margin-top: -310px;
+  margin-top: -13em;
 }
 
 @media (max-width: 768px) {
   section {
-    margin-top: -310px;
+    margin-top: -13em;
     height: 130vh;
   }
 }
@@ -378,8 +379,8 @@ section .banner .secondSpan {
 section .banner a {
   text-decoration: none;
   color: #00071C;
-  padding: 20px;
-  border-radius: 5px;
+  padding: 1em;
+  border-radius: 0.5em;
   text-align: center;
   background: -webkit-gradient(linear, left top, right top, from(#ffc04a), color-stop(25%, #ff9949), color-stop(50%, #ff8848), color-stop(75%, #ff7b48), to(tomato));
   background: linear-gradient(90deg, #ffc04a 0%, #ff9949 25%, #ff8848 50%, #ff7b48 75%, tomato 100%);
@@ -393,14 +394,14 @@ section .banner a:hover {
 }
 
 section .sectionImage {
-  width: 400px;
-  height: 400px;
+  width: 25%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
   top: 20%;
   left: 70%;
-  border-radius: 5px;
+  border-radius: 0.5em;
   opacity: 0;
   -webkit-animation: fadeUp 2s ease-in both;
           animation: fadeUp 2s ease-in both;
@@ -451,7 +452,7 @@ main {
 @media (max-width: 768px) {
   .about-text {
     width: 100%;
-    font-size: 18px;
+    font-size: 1.1em;
   }
 }
 
@@ -466,7 +467,7 @@ main {
 @media (max-width: 768px) {
   .about-text2 {
     width: 100%;
-    font-size: 18px;
+    font-size: 1.1em;
   }
 }
 
@@ -481,7 +482,7 @@ main {
 @media (max-width: 768px) {
   .about-text3 {
     width: 100%;
-    font-size: 18px;
+    font-size: 1.1em;
   }
 }
 
@@ -610,8 +611,8 @@ article {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  width: 400px;
-  height: 400px;
+  width: 32em;
+  height: 24em;
   background-image: url("/images/projects-image.jpg");
   background-size: cover;
   border-radius: 5px;
@@ -622,8 +623,12 @@ article {
 
 @media (max-width: 768px) {
   .projectsLink {
-    width: 300px;
-    height: 200px;
+    width: 18em;
+    height: 14em;
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+    color: red;
+    background-position: 0;
   }
 }
 
@@ -631,13 +636,15 @@ article {
   position: absolute;
   left: 35%;
   top: 35%;
-  font-size: 36px;
+  font-size: 2.5em;
 }
 
 @media (max-width: 768px) {
   .projectsLink h2 {
     top: 20%;
-    left: 30%;
+    left: 25%;
+    background-color: #fff;
+    opacity: 0.5;
   }
 }
 
@@ -663,10 +670,11 @@ article {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  width: 400px;
-  height: 400px;
+  width: 32em;
+  height: 24em;
   background-image: url("/images/contact.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: -50px;
   border-radius: 5px;
   color: #fff;
@@ -676,23 +684,28 @@ article {
 
 @media (max-width: 768px) {
   .contactsLink {
-    width: 300px;
-    height: 200px;
+    width: 18em;
+    height: 14em;
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+    color: red;
     background-position: 0;
   }
 }
 
 .contactsLink h2 {
   position: absolute;
-  left: 25%;
+  left: 20%;
   top: 35%;
-  font-size: 36px;
+  font-size: 2.5em;
 }
 
 @media (max-width: 768px) {
   .contactsLink h2 {
     top: 20%;
-    left: 20%;
+    left: 10%;
+    background-color: #fff;
+    opacity: 0.5;
   }
 }
 

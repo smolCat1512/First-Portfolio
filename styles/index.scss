@@ -109,16 +109,17 @@ header {
         a {
             font-family: $poppins;
             text-decoration: none;
-            padding: 15px;
+            padding: 1em;
             font-size: 1.4em;
+            overflow-x: hidden;
 
             a:last-child {
-                padding-right: 10px;
+                padding-right: 1em;
             }
 
             @include mobile() {
-                font-size: 18px;
-                padding: 5px;
+                font-size: 1.2em;
+                padding: .5em;
             }
         }
     }
@@ -252,10 +253,10 @@ hr {
 section {
     height: 115vh;
     background-color: $darkBlue;
-    margin-top: -310px;
+    margin-top: -13em;
 
     @include mobile {
-        margin-top: -310px;
+        margin-top: -13em;
         height: 130vh;
     }
 
@@ -342,8 +343,8 @@ section {
         a {
             text-decoration: none;
             color: $darkBlue;
-            padding: 20px;
-            border-radius: 5px;
+            padding: 1em;
+            border-radius: 0.5em;
             text-align: center;
             background: linear-gradient(90deg, rgba(255, 192, 74, 1) 0%, rgba(255, 153, 73, 1) 25%, rgba(255, 136, 72, 1) 50%, rgba(255, 123, 72, 1) 75%, rgba(255, 99, 71, 1) 100%);
             width: 6em;
@@ -357,13 +358,13 @@ section {
     }
 
     .sectionImage {
-        width: 400px;
-        height: 400px;
+        width: 25%;
+        height: auto;
         object-fit: cover;
         position: absolute;
         top: 20%;
         left: 70%;
-        border-radius: 5px;
+        border-radius: 0.5em;
         opacity: 0;
         animation: fadeUp 2s ease-in both;
         transition-timing-function: ease;
@@ -409,7 +410,7 @@ main {
 
     @include mobile() {
         width: 100%;
-        font-size: 18px;
+        font-size: 1.1em;
     }
 }
 
@@ -422,7 +423,7 @@ main {
 
     @include mobile() {
         width: 100%;
-        font-size: 18px;
+        font-size: 1.1em;
     }
 }
 
@@ -435,7 +436,7 @@ main {
 
     @include mobile() {
         width: 100%;
-        font-size: 18px;
+        font-size: 1.1em;
     }
 }
 
@@ -543,8 +544,8 @@ article {
     text-decoration: none;
     font-family: $poppins;
     text-align: center;
-    width: 400px;
-    height: 400px;
+    width: 32em;
+    height: 24em;
     background-image: url("/images/projects-image.jpg");
     background-size: cover;
     border-radius: 5px;
@@ -552,19 +553,25 @@ article {
     filter: grayscale(100%);
 
     @include mobile() {
-        width: 300px;
-        height: 200px;
+        width: 18em;
+        height: 14em;
+        filter: brightness(100%);
+        color: red;
+        background-position: 0;
     }
 
     h2 {
         position: absolute;
         left: 35%;
         top: 35%;
-        font-size: 36px;
+        font-size: 2.5em;
+
 
         @include mobile() {
             top: 20%;
-            left: 30%;
+            left: 25%;
+            background-color: $white;
+            opacity: 0.5;
         }
     }
 }
@@ -586,30 +593,37 @@ article {
     text-decoration: none;
     font-family: $poppins;
     text-align: center;
-    width: 400px;
-    height: 400px;
+    width: 32em;
+    height: 24em;
     background-image: url("/images/contact.jpeg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: -50px;
     border-radius: 5px;
     color: $white;
     filter: grayscale(100%);
 
     @include mobile() {
-        width: 300px;
-        height: 200px;
+        width: 18em;
+        height: 14em;
+        filter: brightness(100%);
+        color: red;
         background-position: 0;
     }
 
     h2 {
         position: absolute;
-        left: 25%;
+        left: 20%;
         top: 35%;
-        font-size: 36px;
+        font-size: 2.5em;
+
+
 
         @include mobile() {
             top: 20%;
-            left: 20%;
+            left: 10%;
+            background-color: $white;
+            opacity: 0.5;
         }
     }
 }

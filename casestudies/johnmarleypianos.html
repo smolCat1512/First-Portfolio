@@ -1,17 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/styles/casestudies.css">
-        <link rel="icon" type="image/ico" href="/logo.ico">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <title>Shaun Halliday - Front-end Developer - John Marley Pianos case study</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/casestudies.css">
+    <link rel="icon" type="image/ico" href="/logo.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Shaun Halliday - Front-end Developer - John Marley Pianos case study</title>
+</head>
+
 <body>
-    
+
+    <main>
+
+        <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+
+            <h1>John Marley Pianos Case Study</h1>
+
+            <h2>Executive Summary</h2>
+
+            <p>This brief aimed to build an attractive site to sell the services and products that John Marley
+                Pianos provide. The content was provided by the client as part of the brief with a short description
+                of pages required and a colour scheme to be used throughout.
+            </p>
+
+        </div>
+
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+
+            <h2>Research</h2>
+
+            <p>Desk research was undertaken on other piano product and service websites to judge design aspects, as the
+                content was provided no content research or production was required.</p>
+
+            <p>Three sites were looked at for design inspiration and motivation, coachhousepianos.co.uk,
+                bonnersmusic.co.uk and forsyths.co.uk. The main site that inspiration and design was harnessed
+                from was the coach house site. These sites can be seen in the images below:</p>
+
+            <img src="/images/deskresearch4.jpeg" alt="coachhousepianos.co.uk home screen screenshot">
+
+            <img src="/images/deskresearch5.jpeg" alt="bonnersmusic.co.uk home screen screenshot">
+
+            <img src="/images/deskresearch6.jpeg" alt="forsyths.co.uk home screen screenshot">
+
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300" data-aos-easing="ease-in-sine">
+
+            <h2>Pre-design work</h2>
+
+            <p>Before any design creation and iteration was undertaken the images provided by the client were all
+                changed to
+                jpeg files, to keep a consistent image format throughout the site. These images were then uploaded to
+                tinyjpg.com to compress and optimise them, replacing the original images. This not only optimised the
+                images
+                for use throughout the site but also reduced the amount of data used in browsing the site.</p>
+
+            <p>All content provided by the client was also run through Grammarly to check for spelling and grammatical
+                errors.</p>
+
+            <h2>Design iteration stage</h2>
+
+            <p>First paper mockups were produced to reflect a rough design of the site at this stage, these were
+                informed from the previous desk research findings. A sample of the paper mockups can be seen in the
+                images below:
+            </p>
+
+            <img class="mockups" src="/images/papermockups3.jpeg" alt="John Marley Pianos home page paper mockup number 1">
+
+            <img class="mockups" src="/images/papermockups4.jpeg" alt="John Marley Pianos home page paper mockup number 2">
+
+            <img class="mockups" src="/images/papermockups5.jpeg" alt="John Marley Pianos testimonials page paper mockup">
+
+            <img class="mockups" src="/images/papermockups6.jpeg" alt="John Marley Pianos blogs page paper mockup">
+
+            <p>Next, these paper mockups were refined and improved upon by using Figma to produce high-fidelity mockups,
+                an
+                extra benefit of using Figma is that CSS properties can be pulled directly from the inspect tab, this
+                helped
+                with linear gradients and colour changes on images used in the site. Additionally, Zeplin was used to
+                pull
+                all the CSS from the Figma designs sped up the development process. A sample of these can be seen
+                in
+                the images below:</p>
+
+            <img class="mockups" src="/images/Figma-JMP1.jpeg" alt="Screenshot of Figma - John Marley Pianos components 1">
+
+            <img class="mockups" src="/images/Figma-JMP2.jpeg"
+                alt="Screenshot of Figma -  John Marley Pianos components 2">
+
+            <img class="mockups" src="/images/Figma-JMP3.jpeg"
+                alt="Screenshot of Figma high-fidelity mockup of John Marley Pianos home page 1">
+
+            <img class="mockups" src="/images/Figma-JMP4.jpeg"
+                alt="Screenshot of Figma high-fidelity mockup of John Marley Pianos home page 2">
+
+        </div>
+
+        <div>
+
+            <h2 data-aos="fade-left" data-aos-duration="800" data-aos-offset="300" data-aos-easing="ease-in-sine">Build
+                Stage</h2>
+
+            <p data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300" data-aos-easing="ease-in-sine">The
+                site was built using HTML5 and CSS3 (via Sass pre-processing), and this was supplemented via
+                Javascript to animate content via CSS and an API being pulled in for the Google Maps implementation in
+                the contact area. As this was a single person build for a small brief agile methodology was employed
+                throughout for the research, design, build, testing and deployment. A kanban board was used via Trello
+                to keep a track of tasks throughout. Version control was used throughout the build process, using Git
+                via Bitbucket. The responsive design methodology was employed through the use of media queries, used
+                throughout the sass files to set different fonts, grids, flex containers and display settings dependent
+                on the device breakpoints.</p>
+
+            <h2 data-aos="fade-up" data-aos-duration="800" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                Testing, Validation and Deployment Stage</h2>
+
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-easing="ease-in-sine">All
+                the HTML was validated using the W3C validation service at validator.w3.org, to ensure standards were
+                met in the HTML. Using the live server plugin in VS Code to run the site, accessibility testing was
+                undertaken to resolve any issues that arose.</p>
+
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-easing="ease-in-sine">The site
+                was deployed on the Netlify platform, bringing many benefits including a CDN that would hold the
+                images and serve them quicker and more optimised. At this stage, the site was also tested with the
+                browser tool Google Lighthouse to ensure the code/build is maximised for performance and usability.</p>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>&#169;
+            <script>
+                document.write(new Date().getFullYear())
+            </script> Shaun Halliday</p>
+        <p>Website created and coded out by Shaun Halliday</p>
+
+    </footer>
+
+    <button id="topButton">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+
+    <script src="/javascript/top.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+
 </html>
