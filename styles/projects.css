@@ -249,7 +249,7 @@ section {
 @media (max-width: 768px) {
   section {
     margin-top: -310px;
-    height: 80vh;
+    height: 100vh;
   }
 }
 
@@ -435,14 +435,14 @@ main .project-wrapper {
       grid-template-rows: auto;
   grid-gap: 1em;
   padding-bottom: 10%;
-      grid-template-areas: 'img img h2 h2' 'img img p p' 'img img casestudy applink';
+      grid-template-areas: 'img img h2 h2' 'img img p1 p1' 'img img p2 p3' 'img img p4 p4' 'img img casestudy applink';
 }
 
 @media (max-width: 768px) {
   main .project-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'img' 'h2' 'p' 'casestudy' 'applink';
+        grid-template-areas: 'img' 'h2' 'p1' 'p2' 'p3' 'p4' 'casestudy' 'applink';
     padding-bottom: 40%;
   }
 }
@@ -451,7 +451,7 @@ main .project-wrapper img {
   max-width: 100%;
   height: auto;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: img;
@@ -477,10 +477,6 @@ main .project-wrapper h2 {
 
 main .project-wrapper p {
   font-family: "Source Sans Pro", sans-serif;
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: p;
   font-size: 1.5em;
   line-height: 1.5em;
   margin: 0;
@@ -508,7 +504,7 @@ main .project-wrapper a {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5em;
   color: #000000;
-  background-color: #6a8b9b;
+  background-color: #757882;
   border-radius: 5px;
   -webkit-transition: all 500ms;
   transition: all 500ms;
@@ -527,15 +523,41 @@ main .project-wrapper a:hover {
 }
 
 main .project-wrapper .casestudy {
-  -ms-grid-row: 3;
+  -ms-grid-row: 5;
   -ms-grid-column: 3;
   grid-area: casestudy;
 }
 
 main .project-wrapper .applink {
-  -ms-grid-row: 3;
+  -ms-grid-row: 5;
   -ms-grid-column: 4;
   grid-area: applink;
+}
+
+main .project-wrapper .p1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: p1;
+}
+
+main .project-wrapper .p2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: p2;
+}
+
+main .project-wrapper .p3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: p3;
+}
+
+main .project-wrapper .p4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: p4;
 }
 
 footer {

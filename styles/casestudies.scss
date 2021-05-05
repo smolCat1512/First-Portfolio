@@ -1,0 +1,77 @@
+// Styling colours 
+$darkBlue: #00071C;
+$lightBlue: #6a8b9b;
+$white: #fff;
+$black: #000000;
+$lightGrey: #757882;
+$orange: #FF664D;
+$logofade: linear-gradient(90deg, rgba(255, 192, 74, 1) 0%, rgba(255, 153, 73, 1) 25%, rgba(255, 136, 72, 1) 50%, rgba(255, 123, 72, 1) 75%, rgba(255, 99, 71, 1) 100%);
+$firstfade: linear-gradient(90deg, rgba(255, 192, 74, 1) 0%, rgba(255, 153, 73, 1) 25%);
+$secondfade: linear-gradient(90deg, rgba(255, 153, 73, 1) 25%, rgba(255, 136, 72, 1) 50%);
+$thirdfade: linear-gradient(90deg, rgba(255, 136, 72, 1) 50%, rgba(255, 123, 72, 1) 75%);
+$fourthfade: linear-gradient(90deg, rgba(255, 123, 72, 1) 75%, rgba(255, 99, 71, 1) 100%);
+
+// Styling fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+
+// Font usage variables
+$poppins: 'Poppins',
+sans-serif;
+$sourceSans: 'Source Sans Pro',
+sans-serif;
+
+// Media queries
+
+$smallerScreens: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$smallerScreens}) {
+        @content;
+    }
+}
+
+// Body styling and standard stylings for elements
+body {
+    margin: 0;
+    padding: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    font-family: $poppins;
+}
+
+p, a {
+    font-family: $sourceSans;
+}
+
+
+
+
+
+
+
+
+
+// Styling for the return to top of page button
+#topButton {
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $fourthfade;
+    box-shadow: 0 0 10px $lightBlue;
+    color: $white;
+    outline: none;
+    border: none;
+}
+
+#topButton:active {
+    background: #6a8b9b;
+}

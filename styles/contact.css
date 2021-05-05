@@ -237,7 +237,7 @@ main {
 @media (max-width: 768px) {
   main {
     margin-top: -310px;
-    height: 150vh;
+    height: 170vh;
   }
 }
 
@@ -265,7 +265,7 @@ main .banner {
 
 @media (max-width: 768px) {
   main .banner {
-    top: 20%;
+    top: 30%;
     left: 5%;
     font-size: .5em;
     width: 90%;

@@ -239,7 +239,7 @@ main {
 
     @include mobile {
         margin-top: -310px;
-        height: 150vh;
+        height: 170vh;
     }
 
     .banner {
@@ -257,7 +257,7 @@ main {
         animation: fadeUp 2s ease-in both;
 
         @include mobile() {
-            top: 20%;
+            top: 30%;
             left: 5%;
             font-size: .5em;
             width: 90%;
