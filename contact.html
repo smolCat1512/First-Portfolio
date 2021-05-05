@@ -44,11 +44,13 @@
                     <div class="form">
 
                         <form action="https://formsubmit.co/shaunhalliday1512@gmail.com" method="POST">
-                            <textarea name="name" class="form-control" placeholder="Name" required
+                            <label for="name">Your name:</label>
+                            <textarea id="name" name="name" class="form-control" placeholder="Name" required rows="1"></textarea>
+                            <label for="email">Your E-mail:</label>
+                            <textarea id="email" class="form-control" name="email" placeholder="Email Address" required
                                 rows="1"></textarea>
-                            <textarea class="form-control" name="email" placeholder="Email Address"
-                                required rows="1"></textarea>
-                            <textarea placeholder="Your Message" class="form-control" name="message" rows="5"
+                            <label for="message">Your message:</label>
+                            <textarea id="message" placeholder="Your Message" class="form-control" name="message" rows="5"
                                 required></textarea>
                             <button type="submit">Send</button>
                         </form>
