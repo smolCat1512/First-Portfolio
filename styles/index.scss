@@ -85,7 +85,6 @@ header {
             left: 12%;
             font-size: 2.5em;
             font-weight: 500;
-
         }
 
         .logoText2 {
@@ -384,7 +383,7 @@ section {
         }
 
         @include mobile() {
-            display: none;
+            top: 15%;
         }
     }
 }

@@ -425,7 +425,7 @@ section .sectionImage {
 
 @media (max-width: 768px) {
   section .sectionImage {
-    display: none;
+    top: 15%;
   }
 }
 

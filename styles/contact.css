@@ -319,6 +319,10 @@ main .banner h1 {
   }
 }
 
+main .banner h2 {
+  font-size: 2em;
+}
+
 main .banner p {
   padding: 0;
   margin: 0;
