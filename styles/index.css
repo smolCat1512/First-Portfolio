@@ -274,9 +274,10 @@ section .banner {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  text-align: justify;
   top: 20%;
   left: 10%;
-  width: 50%;
+  width: 55%;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #757882;
@@ -400,7 +401,7 @@ section .sectionImage {
      object-fit: cover;
   position: absolute;
   top: 20%;
-  left: 70%;
+  left: 65%;
   border-radius: 0.5em;
   opacity: 0;
   -webkit-animation: fadeUp 2s ease-in both;
