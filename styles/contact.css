@@ -228,7 +228,7 @@ hr {
 }
 
 main {
-  height: 110vh;
+  height: 130vh;
   background-color: #00071C;
   margin-top: -310px;
   padding-bottom: 10%;
@@ -237,7 +237,7 @@ main {
 @media (max-width: 768px) {
   main {
     margin-top: -310px;
-    height: 170vh;
+    height: 190vh;
   }
 }
 
@@ -261,6 +261,7 @@ main .banner {
   opacity: 0;
   -webkit-animation: fadeUp 2s ease-in both;
           animation: fadeUp 2s ease-in both;
+  padding-bottom: 20%;
 }
 
 @media (max-width: 768px) {

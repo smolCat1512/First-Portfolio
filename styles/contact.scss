@@ -232,14 +232,14 @@ hr {
 
 // Section styling for the main area
 main {
-    height: 110vh;
+    height: 130vh;
     background-color: $darkBlue;
     margin-top: -310px;
     padding-bottom: 10%;
 
     @include mobile {
         margin-top: -310px;
-        height: 170vh;
+        height: 190vh;
     }
 
     .banner {
@@ -255,6 +255,7 @@ main {
         color: $lightGrey;
         opacity: 0;
         animation: fadeUp 2s ease-in both;
+        padding-bottom: 20%;
 
         @include mobile() {
             top: 30%;
@@ -372,6 +373,7 @@ main {
 
             button {
                 padding: 1em;
+                
             }
         }
     }
