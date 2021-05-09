@@ -383,7 +383,7 @@ section {
         }
 
         @include mobile() {
-            top: 15%;
+            display: none;
         }
     }
 }
